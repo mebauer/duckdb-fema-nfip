@@ -1,0 +1,6 @@
+# ignore
+
+data/*.parquet
+data/*.csv
+.ipynb_checkpoints
+.DS_Store
