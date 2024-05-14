@@ -1,7 +1,7 @@
 # Analyzing FEMA's National Flood Insurance Program (NFIP) Data With DuckDB
 Author: Mark Bauer
 
-[hurricane-ida](figures/hurricane-ida.png)
+![hurricane-ida](figures/hurricane-ida.png)
 
 # 1. Introduction
 
