@@ -1,6 +1,5 @@
 # ignore
 
-data/*.parquet
-data/*.csv
+data/
 .ipynb_checkpoints
 .DS_Store
