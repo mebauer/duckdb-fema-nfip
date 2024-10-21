@@ -20,7 +20,7 @@ OpenFEMA Dataset: FIMA NFIP Redacted Claims - v2. Retrieved from https://www.fem
 Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions) for further information regarding the usage and access of OpenFEMA datasets.
 
 # 4. Additional Resources
-FEMA:
+## FEMA:
 - NFIP:
     - Flood Insurance Data and Analytics: https://nfipservices.floodsmart.gov/reports-flood-insurance-data
     - Frequently Asked Questions about NFIP Policies and Claims Data: https://nfipservices.floodsmart.gov/frequently-asked-questions-about-nfip-policies-and-claims-data
@@ -30,10 +30,10 @@ FEMA:
     - OpenFEMA Dataset: FIMA NFIP Redacted Policies - v2: https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2
     - OpenFEMA Platform: https://www.fema.gov/about/reports-and-data/openfema
     
-Academic Research:
+## Academic Research:
 - New insights into US flood vulnerability revealed from flood insurance big data (2020): https://www.nature.com/articles/s41467-020-15264-2
 
-NFIP Redacted Claims & Policies Analysis:
+## NFIP Redacted Claims & Policies Analysis:
 - Flood Insurance in the US: Lessons from FEMA’s Recent Data Release (2020):
     - Part I: https://esg.wharton.upenn.edu/news/flood-insurance-in-the-us-lessons-from-femas-recent-data-release-part-i/
     - Part II: https://esg.wharton.upenn.edu/climate-center/flood-insurance-in-the-us-lessons-from-femas-recent-data-release-part-ii/
@@ -46,17 +46,17 @@ NFIP Redacted Claims & Policies Analysis:
 - Modeling Fundamentals: Evaluating U.S. Flood Model Loss Output with Historical Loss Experience (2020): https://www.verisk.com/blog/modeling-fundamentals-evaluating-u-s--flood-model-loss-output-with-historical-loss-experience/
 - Facts + Statistics: Flood insurance: https://www.iii.org/fact-statistic/facts-statistics-flood-insurance
     
-Community Open Data:
+## Community Open Data:
 - Norfolk Claims from the FEMA National Flood Insurance Program: https://data.norfolk.gov/stories/s/FEMA-National-Flood-Insurance-Program-Redacted-Cla/gi5t-nkzw/
 - Norfolk Open Data: https://data.norfolk.gov/Government/FEMA-NFIP-Claims/suf7-r643/about_data
 
-Other:
-DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System: https://www.dhs.gov/publication/dhsfemapia-050-national-flood-insurance-program-nfip-pivot-system
+## Other:
+- DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System:
     - DHS/FEMA/PIA-050 National Flood Insurance Program PIVOT System - March 2018: https://www.dhs.gov/sites/default/files/publications/privacy-pia-fema-050-nfippivot-march2018_0.pdf
     - DHS/FEMA/PIA-050 National Flood Insurance Program PIVOT System - PIA Appendix - September 2022: https://www.dhs.gov/sites/default/files/2022-09/privacy-pia-fema-050-nfippivot-sep2022.pdf
     
-OIG:    
-- FIMA Made Progress Modernizing Its NFIP System, but Data Quality Needs Improvement (2020): https://www.oig.dhs.gov/sites/default/files/assets/2020-11/OIG-21-04-Nov20.pdf 
+- OIG:    
+    - FIMA Made Progress Modernizing Its NFIP System, but Data Quality Needs Improvement (2020): https://www.oig.dhs.gov/sites/default/files/assets/2020-11/OIG-21-04-Nov20.pdf 
 
 # 5. Say Hello!
 Feel free to reach out.
