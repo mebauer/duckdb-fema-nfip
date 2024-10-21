@@ -31,19 +31,23 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
     - OpenFEMA Platform: https://www.fema.gov/about/reports-and-data/openfema
     
 ## Academic Research:
-- New insights into US flood vulnerability revealed from flood insurance big data (2020): https://www.nature.com/articles/s41467-020-15264-2
+- Wing, O.E.J., Pinter, N., Bates, P.D. *et al*. New insights into US flood vulnerability revealed from flood insurance big data. *Nat Commun* **11**, 1444 (2020). https://doi.org/10.1038/s41467-020-15264-2
 
 ## NFIP Redacted Claims & Policies Analysis:
+**The Wharton School of the University of Pennsylvania**  
 - Flood Insurance in the US: Lessons from FEMA’s Recent Data Release (2020):
     - Part I: https://esg.wharton.upenn.edu/news/flood-insurance-in-the-us-lessons-from-femas-recent-data-release-part-i/
     - Part II: https://esg.wharton.upenn.edu/climate-center/flood-insurance-in-the-us-lessons-from-femas-recent-data-release-part-ii/
-    - The National Flood Insurance Program: A Primer (2022): https://esg.wharton.upenn.edu/wp-content/uploads/2023/07/The-National-Flood-Insurance-Program-A-Primer.pdf
     
+**The Natural Resources Defense Council (NRDC)**  
 - FEMA Flood Data: 2.4 Million Damage Claims and Counting (2019): https://www.nrdc.org/bio/anna-weber/fema-flood-data-24-million-damage-claims-and-counting
 - FEMA Flood Data: What We Still Need to Know (2019): https://www.nrdc.org/bio/anna-weber/fema-flood-data-what-we-still-need-know
 - FEMA Puts New Data on the Map for Policymakers (2020): https://www.huduser.gov/portal/periodicals/cityscpe/vol22num1/ch10.pdf
 
+**Verisk**
 - Modeling Fundamentals: Evaluating U.S. Flood Model Loss Output with Historical Loss Experience (2020): https://www.verisk.com/blog/modeling-fundamentals-evaluating-u-s--flood-model-loss-output-with-historical-loss-experience/
+
+**Insurance Information Institute**
 - Facts + Statistics: Flood insurance: https://www.iii.org/fact-statistic/facts-statistics-flood-insurance
     
 ## Community Open Data:
