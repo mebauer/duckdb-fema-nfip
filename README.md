@@ -12,7 +12,9 @@ The analysis presented here is solely focused on the [FIMA NFIP Redacted Claims]
 Given the substantial size of this dataset, it provided an opportunity to explore and utilize DuckDB, a high-performance analytical database. While this guide offers valuable insights, users are encouraged to supplement their understanding by referring to the [official documentation](https://duckdb.org/docs/) provided on DuckDB's website.
 
 # 2. Notebook
-Explore how DuckDB can query 2.6M rows and 70 columns within a Jupyter Notebook in seconds: [analysis.ipynb](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb).
+- [NFIP Redacted Claims Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explore NFIP Claims data with DuckDB with ease.
+- [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Redacted Claims dataset from OpenFEMA.
+- [Figures](https://github.com/mebauer/duckdb-fema-nfip/blob/main/figures.ipynb): This notebook is dedicated to generating figures and tables displayed on this page. For a more detailed analysis of the NFIP data, refer to the [analysis.ipynb](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb) notebook.
 
 # 3. Data 
 OpenFEMA Dataset: FIMA NFIP Redacted Claims - v2. Retrieved from https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2. This product uses the FEMA OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
@@ -28,7 +30,6 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
     - FEMA NFIP Claims and Policy Data Press Release (2019): https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data
     - OpenFEMA Dataset: FIMA NFIP Redacted Claims - v2: https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2
     - OpenFEMA Dataset: FIMA NFIP Redacted Policies - v2: https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2
-    - OpenFEMA Platform: https://www.fema.gov/about/reports-and-data/openfema
     
 ## Academic Research:
 - Wing, O.E.J., Pinter, N., Bates, P.D. *et al*. New insights into US flood vulnerability revealed from flood insurance big data. *Nat Commun* **11**, 1444 (2020). https://doi.org/10.1038/s41467-020-15264-2
@@ -56,7 +57,7 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 - FEMA NFIP Claims Dataset: https://data.norfolk.gov/Government/FEMA-NFIP-Claims/suf7-r643/about_data
 
 ## Other:
-**DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System**  
+**DHS/FEMA/**    
     - DHS/FEMA/PIA-050 National Flood Insurance Program PIVOT System - March 2018: https://www.dhs.gov/sites/default/files/publications/privacy-pia-fema-050-nfippivot-march2018_0.pdf
     - DHS/FEMA/PIA-050 National Flood Insurance Program PIVOT System - PIA Appendix - September 2022: https://www.dhs.gov/sites/default/files/2022-09/privacy-pia-fema-050-nfippivot-sep2022.pdf
     
