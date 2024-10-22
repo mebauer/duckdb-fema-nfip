@@ -5,9 +5,12 @@ Author: Mark Bauer
 |---------------:|------------------:|---------------------:|---------------------:|-----------:|
 |        2.67149 |           80638.4 |              65049.6 |              14640.3 |    948.437 |
 
+
+
 ![year-count](figures/year-count.png)
 
 ![year-amount-paid](figures/year-amount-paid.png)
+
 
 
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   averageClaim2023 |
@@ -22,6 +25,7 @@ Author: Mark Bauer
 |      8 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  1901 |              53461 |
 |      9 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1825 |              34770 |
 |     10 |         2021 | Hurricane Ida            |         28317 |              1346 |                  1514 |              53480 |
+
 
 
 ![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
