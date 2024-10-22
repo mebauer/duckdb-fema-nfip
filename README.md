@@ -1,8 +1,28 @@
 # Analyzing FEMA's National Flood Insurance Program (NFIP) Data With DuckDB
 Author: Mark Bauer
 
-![hurricane-ida](figures/hurricane-ida.png)  
-*NFIP claims ($) related to Hurricane Ida by county, normalized by county area. Yellow indicates higher claims, purple indicates lower.*
+|   countClaimsM |   paidTotalClaimM |   paidBuildingClaimM |   paidContentsClaimM |   paidICCM |
+|---------------:|------------------:|---------------------:|---------------------:|-----------:|
+|        2.67149 |           80638.4 |              65049.6 |              14640.3 |    948.437 |
+
+
+![year-count](figures/year-count.png)
+
+![year-amount-paid](figures/year-amount-paid.png)
+
+|   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   paidAverageClaim2023 |
+|-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
+|      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 25371 |                 121772 |
+|      2 |         2012 | Hurricane Sandy          |        144848 |              8956 |                 11886 |                  82062 |
+|      3 |         2017 | Hurricane Harvey         |         92396 |              9055 |                 11256 |                 121830 |
+|      4 |         2022 | Hurricane Ian            |         48721 |              4757 |                  4953 |                 101664 |
+|      5 |         2008 | Hurricane Ike            |         58126 |              2702 |                  3824 |                  65799 |
+|      6 |         2016 | Mid-summer severe storms |         30017 |              2533 |                  3216 |                 107150 |
+|      7 |         2004 | Hurricane Ivan           |         20137 |              1325 |                  2137 |                 106170 |
+|      8 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  1901 |                  53461 |
+|      9 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1825 |                  34770 |
+|     10 |         2021 | Hurricane Ida            |         28317 |              1346 |                  1514 |                  53480 |
+
 
 # 1. Introduction
 I've been enjoying [DuckDB](https://duckdb.org/) for the past few weeks, particularly how smooth the Python API feels. With its impressive speed and friendly SQL interface, analyzing moderately large datasets within a Jupyter Notebook is almost effortless. This project aims to demonstrate just how excited I am to use and to learn more about this incredible tool.
@@ -10,6 +30,9 @@ I've been enjoying [DuckDB](https://duckdb.org/) for the past few weeks, particu
 The analysis presented here is solely focused on the [FIMA NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2) dataset, which fortunately is available in Parquet format. With more than 2M rows, this dataset provides detailed information about the [National Flood Insurance Program (NFIP)](https://www.floodsmart.gov/about) claims transations and is redated to protect policy holders.
 
 Given the substantial size of this dataset, it provided an opportunity to explore and utilize DuckDB, a high-performance analytical database. While this guide offers valuable insights, users are encouraged to supplement their understanding by referring to the [official documentation](https://duckdb.org/docs/) provided on DuckDB's website.
+
+Program URL: https://www.fema.gov/flood-insurance
+FloodSmart: https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/us-all&region=us&miny=all&maxy=all&county=&gtype=country
 
 # 2. Notebook
 - [NFIP Redacted Claims Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explore NFIP Claims data with DuckDB with ease.
@@ -24,6 +47,7 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 # 4. Additional Resources
 ## FEMA:
 - NFIP:
+    - Historical NFIP Claims Information and Trends: https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/us-all&region=us&miny=all&maxy=all&county=&gtype=country
     - Flood Insurance Data and Analytics: https://nfipservices.floodsmart.gov/reports-flood-insurance-data
     - Frequently Asked Questions about NFIP Policies and Claims Data: https://nfipservices.floodsmart.gov/frequently-asked-questions-about-nfip-policies-and-claims-data
 - OpenFEMA:
@@ -58,10 +82,10 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 
 ## Other:
 **DHS/FEMA**    
-    - DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System (2018): https://www.dhs.gov/publication/dhsfemapia-050-national-flood-insurance-program-nfip-pivot-system
+- DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System (2018): https://www.dhs.gov/publication/dhsfemapia-050-national-flood-insurance-program-nfip-pivot-system
     
 **OIG**  
-    - FIMA Made Progress Modernizing Its NFIP System, but Data Quality Needs Improvement (2020): https://www.oig.dhs.gov/sites/default/files/assets/2020-11/OIG-21-04-Nov20.pdf 
+- FIMA Made Progress Modernizing Its NFIP System, but Data Quality Needs Improvement (2020): https://www.oig.dhs.gov/sites/default/files/assets/2020-11/OIG-21-04-Nov20.pdf 
 
 # 5. Say Hello!
 Feel free to reach out.
