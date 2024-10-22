@@ -57,9 +57,8 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 - FEMA NFIP Claims Dataset: https://data.norfolk.gov/Government/FEMA-NFIP-Claims/suf7-r643/about_data
 
 ## Other:
-**DHS/FEMA/**    
-    - DHS/FEMA/PIA-050 National Flood Insurance Program PIVOT System - March 2018: https://www.dhs.gov/sites/default/files/publications/privacy-pia-fema-050-nfippivot-march2018_0.pdf
-    - DHS/FEMA/PIA-050 National Flood Insurance Program PIVOT System - PIA Appendix - September 2022: https://www.dhs.gov/sites/default/files/2022-09/privacy-pia-fema-050-nfippivot-sep2022.pdf
+**DHS/FEMA**    
+    - DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System (2018): https://www.dhs.gov/publication/dhsfemapia-050-national-flood-insurance-program-nfip-pivot-system
     
 **OIG**  
     - FIMA Made Progress Modernizing Its NFIP System, but Data Quality Needs Improvement (2020): https://www.oig.dhs.gov/sites/default/files/assets/2020-11/OIG-21-04-Nov20.pdf 
