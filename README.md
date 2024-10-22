@@ -5,24 +5,26 @@ Author: Mark Bauer
 |---------------:|------------------:|---------------------:|---------------------:|-----------:|
 |        2.67149 |           80638.4 |              65049.6 |              14640.3 |    948.437 |
 
-
 ![year-count](figures/year-count.png)
 
 ![year-amount-paid](figures/year-amount-paid.png)
 
-|   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   paidAverageClaim2023 |
-|-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
-|      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 25371 |                 121772 |
-|      2 |         2012 | Hurricane Sandy          |        144848 |              8956 |                 11886 |                  82062 |
-|      3 |         2017 | Hurricane Harvey         |         92396 |              9055 |                 11256 |                 121830 |
-|      4 |         2022 | Hurricane Ian            |         48721 |              4757 |                  4953 |                 101664 |
-|      5 |         2008 | Hurricane Ike            |         58126 |              2702 |                  3824 |                  65799 |
-|      6 |         2016 | Mid-summer severe storms |         30017 |              2533 |                  3216 |                 107150 |
-|      7 |         2004 | Hurricane Ivan           |         20137 |              1325 |                  2137 |                 106170 |
-|      8 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  1901 |                  53461 |
-|      9 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1825 |                  34770 |
-|     10 |         2021 | Hurricane Ida            |         28317 |              1346 |                  1514 |                  53480 |
 
+|   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   averageClaim2023 |
+|-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-------------------:|
+|      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 25371 |             121772 |
+|      2 |         2012 | Hurricane Sandy          |        144848 |              8956 |                 11886 |              82062 |
+|      3 |         2017 | Hurricane Harvey         |         92396 |              9055 |                 11256 |             121830 |
+|      4 |         2022 | Hurricane Ian            |         48721 |              4757 |                  4953 |             101664 |
+|      5 |         2008 | Hurricane Ike            |         58126 |              2702 |                  3824 |              65799 |
+|      6 |         2016 | Mid-summer severe storms |         30017 |              2533 |                  3216 |             107150 |
+|      7 |         2004 | Hurricane Ivan           |         20137 |              1325 |                  2137 |             106170 |
+|      8 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  1901 |              53461 |
+|      9 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1825 |              34770 |
+|     10 |         2021 | Hurricane Ida            |         28317 |              1346 |                  1514 |              53480 |
+
+
+![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
 
 # 1. Introduction
 I've been enjoying [DuckDB](https://duckdb.org/) for the past few weeks, particularly how smooth the Python API feels. With its impressive speed and friendly SQL interface, analyzing moderately large datasets within a Jupyter Notebook is almost effortless. This project aims to demonstrate just how excited I am to use and to learn more about this incredible tool.
