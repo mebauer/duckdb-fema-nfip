@@ -1,6 +1,7 @@
 # Analyzing FEMA's National Flood Insurance Program (NFIP) Data With DuckDB
 Author: Mark Bauer
 
+Table xx. Number and Amount Paid on NFIP Claims (in millions). Total paid amount, in this analysis, is defined as the total amount paid for all building, contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimsM |   paidTotalClaimM |   paidBuildingClaimM |   paidContentsClaimM |   paidICCM |
 |---------------:|------------------:|---------------------:|---------------------:|-----------:|
 |           2.67 |           80638.4 |              65049.6 |              14640.3 |     948.44 |
@@ -8,11 +9,13 @@ Author: Mark Bauer
 
 
 ![year-count](figures/year-count.png)
+Figure xx. Number of NFIP Claims by Year.
 
 ![year-amount-paid](figures/year-amount-paid.png)
+Figure xx. Total Amount Paid on NFIP Claims by Year (Adjusted in 2023 Dollars).
 
 
-
+Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2023 dollars.
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   averagePaidClaim2023 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
 |      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 25371 |                 121772 |
@@ -29,8 +32,10 @@ Author: Mark Bauer
 
 
 ![figures/count-claims-map](figures/count-claims-map.png)
+Figure xx. Number of NFIP Claims by State.
 
 ![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
+Figure xx. Number of NFIP Claims Normalized by State Area.
 
 # 1. Introduction
 I've been enjoying [DuckDB](https://duckdb.org/) for the past few weeks, particularly how smooth the Python API feels. With its impressive speed and friendly SQL interface, analyzing moderately large datasets within a Jupyter Notebook is almost effortless. This project aims to demonstrate just how excited I am to use and to learn more about this incredible tool.
