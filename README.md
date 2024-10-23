@@ -1,7 +1,20 @@
 # Analyzing FEMA's National Flood Insurance Program (NFIP) Data With DuckDB
 Author: Mark Bauer
 
-Table xx. Number and Amount Paid on NFIP Claims (in millions). Total paid amount, in this analysis, is defined as the total amount paid for all building, contents, and Increased Cost of Compliance (ICC) claims.
+### Table of Contents
+* [1. Introduction](#1-Introduction)  
+* [2. Notebooks](#2-Notebooks)  
+* [3. Data](#3-Data)  
+* [4. Additional Resources](#4-Additional-Resources)  
+* [5. Say Hello!](#5-Say-Hello)  
+
+Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
+
+Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
+
+
+
+Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total paid amount, in this analysis, is defined as the total amount paid for all building, contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimsM |   paidTotalClaimM |   paidBuildingClaimM |   paidContentsClaimM |   paidICCM |
 |---------------:|------------------:|---------------------:|---------------------:|-----------:|
 |           2.67 |           80638.4 |              65049.6 |              14640.3 |     948.44 |
@@ -44,10 +57,11 @@ The analysis presented here is solely focused on the [FIMA NFIP Redacted Claims]
 
 Given the substantial size of this dataset, it provided an opportunity to explore and utilize DuckDB, a high-performance analytical database. While this guide offers valuable insights, users are encouraged to supplement their understanding by referring to the [official documentation](https://duckdb.org/docs/) provided on DuckDB's website.
 
-Program URL: https://www.fema.gov/flood-insurance
-FloodSmart: https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/us-all&region=us&miny=all&maxy=all&county=&gtype=country
+To learn more abou the NFIP:
+- NFIP Website: https://www.fema.gov/flood-insurance
+- For more information about what’s covered and to find a policy, visit FloodSmart: https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/us-all&region=us&miny=all&maxy=all&county=&gtype=country
 
-# 2. Notebook
+# 2. Notebooks
 - [NFIP Redacted Claims Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explore NFIP Claims data with DuckDB with ease.
 - [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Redacted Claims dataset from OpenFEMA.
 - [Figures](https://github.com/mebauer/duckdb-fema-nfip/blob/main/figures.ipynb): This notebook is dedicated to generating figures and tables displayed on this page. For a more detailed analysis of the NFIP data, refer to the [analysis.ipynb](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb) notebook.
@@ -86,7 +100,9 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 - Modeling Fundamentals: Evaluating U.S. Flood Model Loss Output with Historical Loss Experience (2020): https://www.verisk.com/blog/modeling-fundamentals-evaluating-u-s--flood-model-loss-output-with-historical-loss-experience/
 
 **Insurance Information Institute**
-- Facts + Statistics: Flood insurance: https://www.iii.org/fact-statistic/facts-statistics-flood-insurance
+- Facts + Statistics: Flood insurance (2024): https://www.iii.org/fact-statistic/facts-statistics-flood-insurance
+- Spotlight on: Flood insurance (2024): https://www.iii.org/article/spotlight-on-flood-insurance
+- Flood: State of the Risk (2023): https://www.iii.org/article/flood-state-of-the-risk
     
 ## Community Open Data:
 **Norfolk Open Data**  
