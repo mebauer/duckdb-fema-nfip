@@ -12,9 +12,11 @@ Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA AP
 
 Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
 
+Data is as of 10-04-2024.
 
+-- 
 
-Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total paid amount, in this analysis, is defined as the total amount paid for all building, contents, and Increased Cost of Compliance (ICC) claims.
+Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all building, contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimsM |   paidTotalClaimM |   paidBuildingClaimM |   paidContentsClaimM |   paidICCM |
 |---------------:|------------------:|---------------------:|---------------------:|-----------:|
 |           2.67 |           80638.4 |              65049.6 |              14640.3 |     948.44 |
@@ -28,7 +30,7 @@ Figure xx. Number of NFIP Claims by Year.
 Figure xx. Total Amount Paid on NFIP Claims by Year (Adjusted in 2023 Dollars).
 
 
-Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2023 dollars.
+Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2023 dollars (i.e. paidTotalClaimM2023). The column paidTotalClaimM is the amount paid ($ millions) when occurred.
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   averagePaidClaim2023 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
 |      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 25371 |                 121772 |
