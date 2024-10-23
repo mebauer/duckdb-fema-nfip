@@ -5,14 +5,19 @@ Author: Mark Bauer
 * [1. Introduction](#1-Introduction)  
 * [2. Notebooks](#2-Notebooks)  
 * [3. Data](#3-Data)  
-* [4. Additional Resources](#4-Additional-Resources)  
+* [4. Additional Resources](#4-Additional-Resources) 
+    * [FEMA](#FEMA) 
+    * [Academic Research](#Academic-Research) 
+    * [NFIP Redacted Claims & Policies Analysis](#NFIP-Redacted-Claims-&-Policies-Analysis) 
+    * [Community Open Data](#Community-Open-Data)
+    * [Other](#Other)
 * [5. Say Hello!](#5-Say-Hello)  
 
 Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
 
 Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
 
-Data is as of 10-04-2024.
+Data as of 10-04-2024.
 
 -- 
 
