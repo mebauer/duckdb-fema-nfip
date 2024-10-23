@@ -59,8 +59,8 @@ Figure xx. Number of NFIP Claims Normalized by State Area.
 
 # 1. Introduction
 The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by [FEMA](https://www.fema.gov/) and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, OpenFEMA [released two datasets](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) related to the NFIP:
-- 1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2) and
-- 2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
+1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2)
+2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
 
 With over 68 million policies and 2.6 million claims transactions as of October 04, 2024, this is one of the largest openly available flood insurance datasets in the United States and possibly the world.
 
