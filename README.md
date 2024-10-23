@@ -58,11 +58,11 @@ Figure xx. Number of NFIP Claims by State.
 Figure xx. Number of NFIP Claims Normalized by State Area.
 
 # 1. Introduction
-The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by [FEMA](https://www.fema.gov/) and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, OpenFEMA [released two datasets](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) related to the NFIP:
+The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by [FEMA](https://www.fema.gov/) and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, [OpenFEMA](https://www.fema.gov/about/reports-and-data/openfema) released [two datasets](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) related to the NFIP to promote transparency, reduce complexity for public data requests, and to improve how the agency’s stakeholders interact with and understand the NFIP:
 1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2)
 2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
 
-With over 68 million policies and 2.6 million claims transactions as of October 04, 2024, this is one of the largest openly available flood insurance datasets in the United States and possibly the world.
+With over 68 million policies and 2.6 million claims transactions as of October 04, 2024, this is one of the largest openly available insurance datasets in the United States and possibly the world.
 
 Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. To address this, I designed a tutorial demonstrating how to analyze the dataset with my local laptop. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping. This project examines the NFIP Redacted Claims dataset.
 
