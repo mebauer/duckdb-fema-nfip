@@ -8,7 +8,7 @@ Author: Mark Bauer
 * [4. Additional Resources](#4-Additional-Resources) 
     * [FEMA](#FEMA) 
     * [Academic Research](#Academic-Research) 
-    * [NFIP Redacted Claims & Policies Analysis](#NFIP-Redacted-Claims-&-Policies-Analysis) 
+    * [NFIP Redacted Claims & Policies Analysis](#NFIP-Redacted-Claims--Policies-Analysis) 
     * [Community Open Data](#Community-Open-Data)
     * [Other](#Other)
 * [5. Say Hello!](#5-Say-Hello)  
@@ -21,7 +21,7 @@ Data as of 10-04-2024.
 
 -- 
 
-Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all building, contents, and Increased Cost of Compliance (ICC) claims.
+Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimsM |   paidTotalClaimM |   paidBuildingClaimM |   paidContentsClaimM |   paidICCM |
 |---------------:|------------------:|---------------------:|---------------------:|-----------:|
 |           2.67 |           80638.4 |              65049.6 |              14640.3 |     948.44 |
@@ -58,15 +58,17 @@ Figure xx. Number of NFIP Claims by State.
 Figure xx. Number of NFIP Claims Normalized by State Area.
 
 # 1. Introduction
-I've been enjoying [DuckDB](https://duckdb.org/) for the past few weeks, particularly how smooth the Python API feels. With its impressive speed and friendly SQL interface, analyzing moderately large datasets within a Jupyter Notebook is almost effortless. This project aims to demonstrate just how excited I am to use and to learn more about this incredible tool.
+The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by FEMA and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, OpenFEMA [released two datasets](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) related to the NFIP: 1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2) and 2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2). With over 2.6 million claims transactions as of October 04, 2024, this is one of the largest openly available flood insurance datasets in the United States and possibly the world. This project examines the NFIP Redacted Claims dataset.
 
-The analysis presented here is solely focused on the [FIMA NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2) dataset, which fortunately is available in Parquet format. With more than 2M rows, this dataset provides detailed information about the [National Flood Insurance Program (NFIP)](https://www.floodsmart.gov/about) claims transations and is redated to protect policy holders.
+Given the file size, I designed a tutorial to demonstrate how I would analyze the dataset on my local laptop. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth and efficient experience, is blazing-fast, includes a robust Python API, and is open-source. I mainly used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
 
-Given the substantial size of this dataset, it provided an opportunity to explore and utilize DuckDB, a high-performance analytical database. While this guide offers valuable insights, users are encouraged to supplement their understanding by referring to the [official documentation](https://duckdb.org/docs/) provided on DuckDB's website.
+The ultimate goal of this project is to promote the dataset for academic research and to assist communities in analyzing and downloading the data. This dataset is one of my favorites, and I hope you find these tutorials helpful in advancing the study and analysis of the NFIP.
 
 To learn more abou the NFIP:
 - NFIP Website: https://www.fema.gov/flood-insurance
 - For more information about what’s covered and to find a policy, visit FloodSmart: https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/us-all&region=us&miny=all&maxy=all&county=&gtype=country
+
+Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
 
 # 2. Notebooks
 - [NFIP Redacted Claims Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explore NFIP Claims data with DuckDB with ease.
