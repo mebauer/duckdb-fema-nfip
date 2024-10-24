@@ -70,7 +70,7 @@ The ultimate goal of this project is to promote the dataset for academic researc
 
 To learn more about the NFIP:
 - NFIP Website: https://www.fema.gov/flood-insurance
-- For more information about what’s covered and to find a policy, visit FloodSmart: https://www.floodsmart.gov/historical-nfip-claims-information-and-trends?map=countries/us/us-all&region=us&miny=all&maxy=all&county=&gtype=country
+- For more information about what’s covered and to find a policy, visit FloodSmart: https://www.floodsmart.gov/why-buy-flood-insurance
 
 Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
 
