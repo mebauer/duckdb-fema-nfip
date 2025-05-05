@@ -17,14 +17,14 @@ Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA AP
 
 Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
 
-Data as of 10-04-2024.
+Data as of 05-04-2025.
 
 -- 
 
 Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
-|   countClaimsM |   paidTotalClaimM |   paidBuildingClaimM |   paidContentsClaimM |   paidICCM |
-|---------------:|------------------:|---------------------:|---------------------:|-----------:|
-|           2.67 |           80638.4 |              65049.6 |              14640.3 |     948.44 |
+|   countClaimM |   paidTotalClaimM |   paidBuildingM |   paidContentsM |   paidICCM |
+|--------------:|------------------:|----------------:|----------------:|-----------:|
+|          2.71 |             87775 |         71337.6 |         15486.1 |     951.23 |
 
 
 
@@ -35,19 +35,19 @@ Figure xx. Number of NFIP Claims by Year.
 Figure xx. Total Amount Paid on NFIP Claims by Year (Adjusted in 2023 Dollars).
 
 
-Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2023 dollars (i.e. paidTotalClaimM2023). The column paidTotalClaimM is the amount paid ($ millions) when occurred.
-|   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2023 |   averagePaidClaim2023 |
+Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2025 dollars (i.e. paidTotalClaimM2025). The column paidTotalClaimM is the amount paid ($ millions) when occurred.
+|   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2025 |   averagePaidClaim2025 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
-|      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 25371 |                 121772 |
-|      2 |         2012 | Hurricane Sandy          |        144848 |              8956 |                 11886 |                  82062 |
-|      3 |         2017 | Hurricane Harvey         |         92396 |              9055 |                 11256 |                 121830 |
-|      4 |         2022 | Hurricane Ian            |         48721 |              4757 |                  4953 |                 101664 |
-|      5 |         2008 | Hurricane Ike            |         58126 |              2702 |                  3824 |                  65799 |
-|      6 |         2016 | Mid-summer severe storms |         30017 |              2533 |                  3216 |                 107150 |
-|      7 |         2004 | Hurricane Ivan           |         20137 |              1325 |                  2137 |                 106170 |
-|      8 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  1901 |                  53461 |
-|      9 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1825 |                  34770 |
-|     10 |         2021 | Hurricane Ida            |         28317 |              1346 |                  1514 |                  53480 |
+|      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 27088 |                 130017 |
+|      2 |         2012 | Hurricane Sandy          |        144848 |              8957 |                 12553 |                  86668 |
+|      3 |         2017 | Hurricane Harvey         |         92397 |              9055 |                 11846 |                 128210 |
+|      4 |         2024 | Hurricane Helene         |         57738 |              5802 |                  5976 |                 103509 |
+|      5 |         2022 | Hurricane Ian            |         48755 |              4830 |                  5457 |                 111945 |
+|      6 |         2008 | Hurricane Ike            |         58126 |              2702 |                  4067 |                  69972 |
+|      7 |         2016 | Mid-summer severe storms |         30018 |              2533 |                  3397 |                 113169 |
+|      8 |         2004 | Hurricane Ivan           |         20137 |              1325 |                  2273 |                 112900 |
+|      9 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  2004 |                  56373 |
+|     10 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1943 |                  37026 |
 
 
 
