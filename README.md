@@ -32,7 +32,7 @@ Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount
 Figure xx. Number of NFIP Claims by Year from 1978 to 2024.
 
 ![year-amount-paid](figures/year-amount-paid.png)
-Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2025 Dollars).
+Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2024 Dollars).
 
 
 Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2025 dollars (i.e. paidTotalClaimM2025). The column paidTotalClaimM is the amount paid ($ millions) when occurred.
@@ -62,7 +62,7 @@ The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NF
 1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2)
 2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
 
-With over 68 million policies and 2.6 million claims transactions as of October 04, 2024, this is one of the largest openly available insurance datasets in the United States and possibly the world. This project examines the NFIP Redacted Claims dataset.
+With over 69 million policies and 2.7 million claims transactions as of May 04, 2025, this is one of the largest openly available insurance datasets in the United States and possibly the world. This project examines the NFIP Redacted Claims dataset.
 
 Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. To address this, I designed a tutorial demonstrating how to analyze the dataset with my local laptop. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
 
@@ -125,9 +125,6 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 ## Other:
 **DHS/FEMA**    
 - DHS/FEMA/PIA-050 National Flood Insurance Program (NFIP) PIVOT System (2018): https://www.dhs.gov/publication/dhsfemapia-050-national-flood-insurance-program-nfip-pivot-system
-    
-**OIG**  
-- FIMA Made Progress Modernizing Its NFIP System, but Data Quality Needs Improvement (2020): https://www.oig.dhs.gov/sites/default/files/assets/2020-11/OIG-21-04-Nov20.pdf 
 
 # 5. Say Hello!
 Feel free to reach out.
