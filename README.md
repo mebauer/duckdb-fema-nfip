@@ -29,10 +29,10 @@ Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount
 
 
 ![year-count](figures/year-count.png)
-Figure xx. Number of NFIP Claims by Year.
+Figure xx. Number of NFIP Claims by Year from 1978 to 2024.
 
 ![year-amount-paid](figures/year-amount-paid.png)
-Figure xx. Total Amount Paid on NFIP Claims by Year (Adjusted in 2023 Dollars).
+Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2025 Dollars).
 
 
 Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2025 dollars (i.e. paidTotalClaimM2025). The column paidTotalClaimM is the amount paid ($ millions) when occurred.
