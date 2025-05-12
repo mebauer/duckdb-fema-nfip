@@ -1,0 +1,328 @@
+datasetId,openFemaDataSet,datasetVersion,name,title,description,type,sortOrder,isSearchable,isNestedObject,isNullable,primaryKey,id,lastRefresh,hash,srid
+openfema-73,FimaNfipClaims,2,asOfDate,As of Date,"The effective date of the data in the file. In other words, the date when the record was created or last updated in the source system. When time is not specified in the field, it will default to T00:00:00.000Z",datetime,2,True,False,True,False,97719ad8-6820-46ef-baca-5ac81be4ce30,2024-11-07T21:42:54.493Z,5ebd8717745887e4f21f71f3107339b807b7a75b,
+openfema-73,FimaNfipClaims,2,agricultureStructureIndicator,Agriculture Structure Indicator,Indicates whether a building is reported as being an agricultural structure in the policy application. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0',boolean,1,False,False,True,False,2fec7d27-8783-412d-a518-cbb24327f2e5,2024-08-27T19:21:04.454Z,1a7fb8b860c960b627097b2f8a5ff5f1fcbaf7bf,
+openfema-73,FimaNfipClaims,2,basementEnclosureCrawlspaceType,Basement Enclosure Crawlspace Type,"Basement is defined for purposes of the NFIP as any level or story which has its floor subgrade on all sides.  Basement structure values are as follows: 
+0 - None; 
+1 - Finished Basement/Enclosure; 
+2 - Unfinished Basement/Enclosure; 
+3 - Crawlspace; 
+4 - Subgrade Crawlspace;",smallint,3,True,False,True,False,d17676e1-00be-4fde-9a26-1dee3c41f09b,2024-08-27T19:21:04.454Z,d2aed3f3ab86e2340999b6c9a5482c779afa74be,
+openfema-73,FimaNfipClaims,2,policyCount,Policy Count,Insured units in an active status. A policy contract ceases to be in an active status as of the cancellation date or the expiration date. Residential Condominium Building Association Policy (RCBAP) contracts are stored as a single policy contract but insure multiple units and therefore represent multiple policies,smallint,4,True,False,True,False,647a6e15-04cb-400a-be9b-cafcfd0168a9,2024-08-27T19:21:04.454Z,036a5b3b87320834f7b2635e81bcfe8f4c03fd44,
+openfema-73,FimaNfipClaims,2,crsClassificationCode,CRS Classification Code,"The Community Rating System (CRS) Classification Credit Percentage used to rate the policy. The insurance premium credit is based on whether a property is in or out of the Special Flood Hazard Area (SFHA) as shown on the community's Flood Insurance Rate Map. The premium credit for properties in the SFHA increases according to a community's CRS class:
+1 - SFHA 45% ** Non SFHA 10% **; 
+2 - SFHA 40% ** Non SFHA 10% **; 
+3 - SFHA 35% ** Non SFHA 10% **; 
+4 - SFHA 30% ** Non SFHA 10% **; 
+5 - SFHA 25% ** Non SFHA 10% **; 
+6 - SFHA 20% ** Non SFHA10% **; 
+7 - SFHA 15% ** Non SFHA 5% **; 
+8 - SFHA 10% ** Non SFHA 5% **; 
+9 - SFHA 5%    Non SFHA 5%; 
+10 - SFHA 0%  Non SFHA 0%; 
+ 
+*For the purpose of determining CRS Premium Discounts, all AR and A99 zones are treated as non-SFHAs. 
+**These percentages are subject to change.  Always refer to the Flood Insurance Manual for the latest information",smallint,5,True,False,True,False,c7adf0e8-c8cb-4a63-bb4a-11387f864194,2024-08-27T19:21:04.454Z,383c80bbc9593a83add82547fa51210e0d4eb6cc,
+openfema-73,FimaNfipClaims,2,dateOfLoss,Date of Loss,"Date on which water first entered the insured building. When time is not specified in the field, it will default to T00:00:00.000Z",datetime,6,True,False,True,False,fa30815d-2125-4c29-9135-57c236991fa3,2024-08-27T19:21:04.454Z,1090808f3f44d27e83ef90b65473959320b28eef,
+openfema-73,FimaNfipClaims,2,elevatedBuildingIndicator,Elevated Building Indicator,"Indicates whether a building meets the NFIP definition of an elevated building. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. An elevated building is a no-basement building that was constructed so as to meet the following criteria: 
+1. The top of the elevated floor (all A zones) or the bottom of the lowest horizontal structural member of the lowest floor (all V zones) is above ground level. 
+2. The building is adequately anchored. 
+3. The method of elevation is pilings, columns (posts and piers), shear walls (not in V zones), or solid foundation perimeter walls (not in V zones).",boolean,7,False,False,True,False,aacee7c1-36ff-4719-8243-921ed4323069,2024-08-27T19:21:04.454Z,3990d40e266824e3f81ce9f68659422adbe1bbfa,
+openfema-73,FimaNfipClaims,2,elevationCertificateIndicator,Elevation Certificate Indicator,"Indicates if a policy has been rated with Elevation Certificate. (An empty value indicates that this information was not reported; it does not necessarily mean that these properties do not have an Elevation Certificate, just that one was not reported at the time the policy was written.)
+1 - No Elevation Certificate, original effective date prior to October 1, 1982, with no break in insurance coverage or change in insurable interest. Policies will be rated using No Base Flood Elevation +2 to +4 feet rates;
+2 - No Elevation Certificate, original effective date on or after October 1, 1982, with no break in insurance coverage or change in insurable interest. Policies will be rated using No Elevation Certificate rates;
+3 - Elevation Certificate with BFE. Policies will be rated using With Base Flood Elevation rates;
+4 - Elevation Certificate without BFE.  Policies will be rated using No Base Flood Elevation rates; 
+A - Basement or Subgrade Crawlspace;
+B - Fill or Crawlspace; 
+C - Piles, Piers, or Columns with Enclosure; 
+D - Piles, Piers, or Columns without Enclosure; 
+E - Slab on Grade;",text,8,True,False,True,False,c8b83566-48fe-4475-bbf5-d3ee3d90a3b1,2024-08-27T19:21:04.454Z,c9ff0868330acaee8fddab2fac2cb022336cb19c,
+openfema-73,FimaNfipClaims,2,elevationDifference,Elevation Difference,"Difference between the elevation of the lowest floor used for rating, or the floodproofed elevation, and the base flood elevation (BFE), or base flood depth, as appropriate. Round to nearest higher elevation difference in whole feet using .5 as the midpoint
+
+NOTE: The depth shown on the Flood Insurance Rate Map (FIRM) for Zone AO that indicates the depth of water above the highest adjacent grade resulting from a flood that has a 1% chance of equaling or exceeding that level in any given year.The elevation of surface water resulting from a flood that has a 1% chance of equaling or exceeding that level in any given year. The BFE is shown on the FloodInsurance Rate Map (FIRM) forZones AE, AH, A1-A30, AR, AR/A, AR/AE, AR/A1-A30, AR/AH, AR/A0, V1-V30 andVE.
+The value of 9999.0 indicates the field is not reported and/or used for this policy",integer,9,True,False,True,False,e79d61d7-0114-4f71-9ebc-52ecc61f112f,2024-08-27T19:21:04.454Z,7b348ca693cae55561c63177c7277bec2745fa9a,
+openfema-73,FimaNfipClaims,2,baseFloodElevation,Base Flood Elevation,Base Flood Elevation (BFE) is the elevation  in feet from the Elevation Certificate at which there is a 1% chance per year of flooding.,"decimal(6,1)",10,True,False,True,False,2585dab9-d8ed-4bfb-9e04-6ec9d37d8f5f,2024-08-27T19:21:04.454Z,7f121d83fe48d8dcc992fbbc771a08946513043f,
+openfema-73,FimaNfipClaims,2,ratedFloodZone,Rated Flood Zone,"Formerly called floodZone. NFIP Flood Zone derived from the Flood Insurance Rate Map (FIRM) used to rate the insured property.
+
+A - Special Flood with no Base Flood Elevation on FIRM; 
+AE, A1-A30 - Special Flood with Base Flood Elevation on FIRM; 
+A99 - Special Flood with Protection Zone; 
+AH, AHB* - Special Flood with Shallow Ponding; 
+AO, AOB* - Special Flood with Sheet Flow; 
+X, B - Moderate Flood from primary water source.  Pockets of areas subject to drainage problems; 
+X, C - Minimal Flood from primary water source.  Pockets of areas subject to drainage problems; 
+D - Possible Flood; 
+V - Velocity Flood with no Base Flood Elevation on FIRM; 
+VE, V1-V30 - Velocity Flood with Base Flood Elevation on FIRM; 
+AE, VE, X - New zone designations used on new maps starting January 1, 1986, in lieu of A1-A30, V1-V30, and B and C; 
+AR - A Special Flood Hazard Area that results from the decertification of a previously accredited flood protection system that is determined to be in the process of being restored to provide base flood protection;
+AR Dual Zones - (AR/AE, AR/A1-A30, AR/AH, AR/AO, AR/A) Areas subject to flooding from failure of the flood protection system (Zone AR) which also overlap an existing Special Flood Hazard Area as a dual zone; 
+
+*AHB, AOB, ARE, ARH, ARO, and ARA are not risk zones shown on a map, but are acceptable values for rating purposes",text,11,True,False,True,False,31c394e9-6c62-4e67-8ea0-265f5d6ea239,2024-08-27T19:21:04.454Z,5319526994bb06a09711f5179fb9c5b7b385a9c3,
+openfema-73,FimaNfipClaims,2,houseWorship,House of Worship,Indicates whether a building is reported as being a house of worship in the policy application. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0',boolean,12,False,False,True,False,9145d53d-7118-4f13-9597-621404be38f5,2024-08-27T19:21:04.454Z,6fe524f3c8a02d3f541592ad5303c9df0773e885,
+openfema-73,FimaNfipClaims,2,locationOfContents,Location of Contents,"Code that indicates the location of contents, (e.g., garage on property, in house):
+1 - Basement/Enclosure/Crawlspace/Subgrade Crawlspace only; 
+2 - Basement/Enclosure/Crawlspace/Subgrade Crawlspace and above; 
+3 - Lowest floor only above ground level (no basement/enclosure/crawlspace/subgrade crawlspace);
+4 - Lowest floor above ground level and higher floors (no basement/enclosure/crawlspace/subgrade crawlspace); 
+5 - Above ground level more than one full floor; 
+6 - Manufactured (mobile) home or travel trailer on foundation;
+7 - Enclosure/Crawlspace and above;",smallint,13,True,False,True,False,16efc1ca-b56e-4317-8073-32fb7a3b6cf1,2024-08-27T19:21:04.454Z,bf5cf6675d2c9067ff2ab6f23255231e986c711f,
+openfema-73,FimaNfipClaims,2,lowestAdjacentGrade,Lowest Adjacent Grade,Lowest natural grade adjacent to the insured structure prior to excavating or filling. The difference in feet of the lowest natural grade adjacent to the building from the reference level of the building,"decimal(6,1)",14,True,False,True,False,fa7598ce-d292-41eb-a8d6-3d733ebf3fb3,2024-08-27T19:21:04.454Z,31e4b6567d97615ab68148aba9597ad71eaf6ad2,
+openfema-73,FimaNfipClaims,2,lowestFloorElevation,Lowest Floor Elevation,A building's lowest floor is the floor or level (including basement/enclosure/crawlspace/subgrade crawlspace) that is used as the point of reference when rating a building. This includes the level to which a building is floodproofed. The elevation in feet of the reference level of the building from the Elevation Certificate.,"decimal(6,1)",15,True,False,True,False,b707a8db-83d9-4fd3-8896-0a3dc6c2fe35,2024-08-27T19:21:04.454Z,89716153d8ab458f933d9fff48c92aa2a75d11b8,
+openfema-73,FimaNfipClaims,2,numberOfFloorsInTheInsuredBuilding,Number of Floors in the Insured Building,"Code that indicates the number of floors in the insured building.
+1 = One floor; 
+2= Two floors; 
+3 = Three or more floors; 
+4 = Split-level; 
+5 = Manufactured (mobile) home or travel trailer on foundation; 
+6 = Townhouse/Rowhouse with three or more floors (RCBAP Low-rise only);",smallint,16,True,False,True,False,81321db2-4ed7-4ac4-ad63-6eed2f80c79f,2024-08-27T19:21:04.454Z,b6ebfbc700f9ad269ad9339312cd406f2c25dccd,
+openfema-73,FimaNfipClaims,2,nonProfitIndicator,Non-Profit Indicator,Indicates whether a building is reported as being a non-profit in the policy application. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0',boolean,17,False,False,True,False,b9d43b0d-4fd6-41ac-8a6d-ca8528654994,2024-08-27T19:21:04.454Z,2d4dbb07588aaf7e8c576d68d68d8d50899ea3d4,
+openfema-73,FimaNfipClaims,2,obstructionType,Obstruction Type,"Code that describes the type of obstruction that may be present under an elevated building. An obstruction includes an enclosed area and/or machinery and equipment attached to the building below the lowest elevated floor.
+10 : Free of obstruction
+15 : With obstruction: enclosure/crawlspace with proper openings not used for rating (not applicable in V Zones)
+20 : With obstruction: less than 300 sq. ft. with breakaway walls, but no machinery or equipment attached to building below lowest elevated floor, or the elevation of the machinery or equipment is at or above the Base Flood Elevation
+24 : With obstruction: less than 300 sq. ft. with breakaway walls or finished enclosure and with machinery or equipment attached to building below lowest elevated floor. The elevation of the machinery or equipment is below the Base Flood Elevation.
+30 : With obstruction: 300 sq. ft. or more with breakaway walls, but no machinery or equipment attached to building below the Base Flood Elevation
+34 : With obstruction: 300 sq. ft. or more with breakaway walls or finished enclosure and with machinery or equipment attached to building below the Base Flood Elevation
+40 : With obstruction: no walls, but the elevation of machinery or equipment attached to building is below Base Flood Elevation
+50 : With obstruction: nonbreakawaywalls/crawlspace or finished enclosure with no machinery or equipment attached to building below lowest elevated floor
+54 : With obstruction: nonbreakawaywalls/crawlspace or finished enclosure with machinery or equipment attached to building below lowest elevated floor
+60 : With obstruction
+70 : With Certification subgrade crawlspace (AE, A01-A30, unnumbered A, AO, AH,AOB, AHB zones)
+80 : Without Certification subgrade crawlspace (all zones)
+90 : With Enclosure: Elevated buildings with elevator below the BFE in A zones. No other enclosure below the BFE.
+91 : Free of Obstruction: Elevated buildings with lattice, slats, or shutters (including louvers) enclosing the elevator below the BFE in V zones. No other obstruction or machinery and equipment (M&E) servicing the building located below the BFE. The building will be rated free of obstruction with the V zone elevator loading added to the building basic limit.
+92 : With Enclosure: Elevated buildings with elevator below the BFE in A zones. Enclosure below the BFE has no proper openings, is finished, or is used for other than parking, building access,or storage.
+94 : With Obstruction: Elevated buildings with elevator below the BFE in V zones. No other obstruction or machinery and equipment (M&E)servicing the building located belowthe BFE.
+95 : With Obstruction: Elevated buildings with elevator below the BFE in V zones. Breakaway wall obstruction is unfinished and elevator and obstruction are located below the BFE but no machinery and equipment (M&E) servicing the building is located below the BFE.
+96 : With Obstruction: Elevated buildings with elevator below the BFE in V zones. Breakaway wall obstruction is finished or is used for other than parking, building access, or storage.
+97 : With Obstruction: Elevated buildings with elevator below the BFE in V zones. No other obstruction, but has M&E servicing the building located below the BFE.
+98 : With Obstruction: Elevated buildings with elevator below the BFE in V zones. Breakaway walls obstruction and M&E servicing the building are located below the BFE.",smallint,18,True,False,True,False,f12ff348-158e-41c1-a7b7-dd4efa1cf551,2024-08-27T19:21:04.454Z,e74fb3773c23561da9ac807386887859adcbdc32,
+openfema-73,FimaNfipClaims,2,occupancyType,Occupancy Type,"Code indicating the use and occupancy type of the insured structure. Note, 2-digit codes are for Risk Rating 2.0 policies. 
+1=single family residence; 
+2 = 2 to 4 unit residential building; 
+3 = residential building with more than 4 units; 
+4 = Non-residential building;
+6 = Non Residential - Business; 
+11 = Single-family residential building with the exception of a mobile home or a single residential unit within a multi unit building; 
+12 = A residential non-condo building with 2, 3, or 4  units seeking insurance on all units; 
+13 = A residential non-condo building with 5 or more units seeking insurance on all units; 
+14 = Residential mobile/manufactured home; 
+15 = Residential condo association seeking coverage on a building with one or more units; 
+16 = Single residential unit within a multi-unit building; 
+17 = Non-residential mobile/manufactured home; 
+18 = A non-residential building; 
+19 = a non-residential unit within a multi-unit building;",smallint,19,True,False,True,False,42b4c343-999f-4d3e-9ee0-76fd85153209,2024-08-27T19:21:04.454Z,bd21dd751024ee7d94ba6403b830919237a14a7f,
+openfema-73,FimaNfipClaims,2,originalConstructionDate,Original Construction Date,The original date of the construction of the building.,date,20,True,False,True,False,ae105f32-5473-444f-8b1f-a8e84a6fc44a,2024-08-27T19:21:04.454Z,73dd3cbd7ab194419138b4ebceff9bfda7f36d47,
+openfema-73,FimaNfipClaims,2,originalNBDate,Original NB Date,The original date of the flood policy.,date,21,True,False,True,False,d79c67d1-25fb-4690-b8eb-37fc94ae88f4,2024-08-27T19:21:04.454Z,81a4063eb3991600574db155d79cdee7bc6b2928,
+openfema-73,FimaNfipClaims,2,amountPaidOnBuildingClaim,Amount Paid on Building Claim,"Dollar amount paid on the building claim. In some instances, a negative amount may appear which occurs when a check issued to a policy holder is not cashed and has to be re-issued",decimal,22,True,False,True,False,5d8026eb-e7e9-461d-9250-0a4c5237033b,2024-08-27T19:21:04.454Z,ebdbb686291767e0cb8669465c0c7b1478549bc1,
+openfema-73,FimaNfipClaims,2,amountPaidOnContentsClaim,Amount Paid on Contents Claim,"Dollar amount paid on the contents claim. In some instances, a negative amount may appear, which occurs when a check issued to a policy holder is not cashed and has to be re-issued",decimal,23,True,False,True,False,df169453-a3f0-41f8-9a1e-76ebd48937ce,2024-08-27T19:21:04.454Z,059f4c4c50ed6c46021c281023300f9a1b5715f4,
+openfema-73,FimaNfipClaims,2,amountPaidOnIncreasedCostOfComplianceClaim,Amount Paid on Increased Cost of Compliance (ICC) Claim,"ICC coverage is one of several flood insurance resources for policyholders who need additional help rebuilding after a flood. It provides up to $30,000 to help cover the cost of mitigation measures that will reduce the flood risk",decimal,24,True,False,True,False,56bee198-fad9-4032-a91e-0ca6efd7666c,2024-08-27T19:21:04.454Z,3c9c02d54b47e954939becc0d2a46c5119e3b2be,
+openfema-73,FimaNfipClaims,2,postFIRMConstructionIndicator,Post-FIRM Construction Indicator,"Indicates whether construction was started before or after publication of the FIRM. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. For insurance rating purposes, buildings for which the start of construction or substantial improvement was after December 31, 1974, or on or after the effective date of the initial FIRM for the community, whichever is later, are considered Post-FIRM construction.",boolean,25,False,False,True,False,ebaed0cb-3252-4f7f-9dec-1ee7b8aade96,2024-08-27T19:21:04.454Z,715fdb43f25cd2d8fa8384575d58b460e1f1cb1a,
+openfema-73,FimaNfipClaims,2,rateMethod,Rate Method,"Indicates policy rating method: 1 - Manual; 2 - Specific; 3 - Alternative; 4 - V-Zone Risk Factor Rating Form; 5 - Underinsured Condominium Master Policy; 6 - Provisional; 7 - Preferred Risk Policy (PRPs issued for eligible properties located within a non-Special Flood Hazard Area [non-SFHA]); 8 - Tentative; 9 - MPPP Policy; A - Optional Post-1981 V Zone; B - Pre-FIRM policies with elevation rating - Flood Insurance Manual rate tables; E - FEMA Pre-FIRM Special Rates; F - Leased Federal Property; G - Group Flood Insurance Policy (GFIP); P - Preferred Risk Policy (A PRP renewal issued in the first year following a map revision for an eligible property that was newly mapped into the SFHA by the map revision, or new business written for an eligible property that was newly mapped into the SFHA by a map revision effective on or after October 1, 2008 - PRP Eligibility Extension); Q - Preferred Risk Policy (subsequent PRP renewals where the previous policy year was reported as a 'P' or 'Q'); R - Newly Mapped into SFHA; S - FEMA Special Rates; T - Severe Repetitive Loss Properties (formerly Target Group Full Risk). Effective October 1, 2013, code will no longer be valid; W - Pre-FIRM policies with elevation rating - Submit-for-Rate procedures;RatingEngine : Risk Rated policies where FEMA calculates the rates based on various risk factors.",text,26,True,False,True,False,13f8d857-43f4-4083-876a-27f2dd12cfad,2024-08-27T19:21:04.454Z,1540ad3d7c296e81dbd1fe0e115a673f1f777f5f,
+openfema-73,FimaNfipClaims,2,smallBusinessIndicatorBuilding,Small Business Indicator Building,Indicates whether or not the insured represents a small business. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. Small business is defined as a business with fewer than 100 employees in the policy application.,boolean,27,False,False,True,False,7a4db2f2-db09-41f1-9727-2a2233f679b9,2024-08-27T19:21:04.454Z,3294032ecfad6de1cad1aadf174ca3157b382d85,
+openfema-73,FimaNfipClaims,2,totalBuildingInsuranceCoverage,Total Building Insurance Coverage,Total Insurance Amount in whole dollars on the Building,integer,28,True,False,True,False,895d65a9-c510-4040-ab3d-720285fb9dfc,2024-08-27T19:21:04.454Z,9b817b73db75638559923531d15ed06d92f41170,
+openfema-73,FimaNfipClaims,2,totalContentsInsuranceCoverage,Total Contents Insurance Coverage,Total Insurance Amount in whole dollars on the Contents,integer,29,True,False,True,False,95477b44-fa36-4b5b-86f9-c2d5635857ab,2024-08-27T19:21:04.454Z,e6c86d56947c18f7f1cb77cf4c02aee52ff0310d,
+openfema-73,FimaNfipClaims,2,yearOfLoss,Year of Loss,Year in which the flood loss occurred,smallint,30,True,False,True,False,5f2f35d3-d773-4990-892a-df67805b6ee5,2024-08-27T19:21:04.454Z,c18385335c397a209a629612ffbb4c2051d26dbd,
+openfema-73,FimaNfipClaims,2,primaryResidenceIndicator,Primary Residence Indicator,"Indicates whether a building is a primary residence. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. A primary residence is a single family building, condominium unit, apartment unit, or unit within a cooperative building that will be lived in by the policyholder or the policyholder's spouse for: More than 50% of the 365 calendar days following the current policy effective date; or 50% or less of the 365 calendar days following the current policy effective date if the policyholder has only one residence and does not lease that residence to another party or use it as rental or income property at any time during the policy term. A policyholder and the policyholder's spouse may not collectively have more than one primary residence",boolean,31,False,False,True,False,525ff657-0577-4df7-80a3-c42844a935f2,2024-08-27T19:21:04.454Z,41048dff484b99b80ecb50dcc255881c4010ffbe,
+openfema-73,FimaNfipClaims,2,buildingDamageAmount,Building Damage Amount,The actual cash value amount of damage to a main property in whole dollars.,integer,32,True,False,True,False,5770c245-df46-4cb6-b395-a8d230cf10a9,2024-08-27T19:21:04.454Z,bf7f0dd6434849e4496f97bf3b7f6fb89c5e18bb,
+openfema-73,FimaNfipClaims,2,buildingDeductibleCode,Building Deductible Code,"The total deductible amount in dollars for buildings, both main and appurtenant, that can be applied against a loss.
+Legal values (value : description):
+0 : $500; 
+1 : $1,000; 
+2 : $2,000; 
+3 : $3,000; 
+4 : $4,000; 
+5 : $5,000; 
+9 : $750; 
+A : $10,000; 
+B : $15,000; 
+C : $20,000; 
+D : $25,000; 
+E : $50,000; 
+F : $1,250; 
+G : $1,500; 
+H : $200 - Used only in Group Flood Insurance Policies;",text,33,True,False,True,False,28441cd3-ea2c-49c3-a342-bac6e3633d5f,2024-08-27T19:21:04.454Z,5e25a38b5db6bac2be90885480c28f4710bd8ce3,
+openfema-73,FimaNfipClaims,2,netBuildingPaymentAmount,Net Building Payment Amount,Net building payment amount made to insured in dollars,decimal,34,True,False,True,False,c6d5be89-fc12-4576-a05a-44ad15ff35ae,2024-08-27T19:21:04.454Z,964bd725e2cee591630836b7acaf787de87ff524,
+openfema-73,FimaNfipClaims,2,buildingPropertyValue,Building Property Value,The actual cash value of the main building in whole dollars as estimated by an adjuster,integer,35,True,False,True,False,556af420-b502-4033-9a52-49e4ec362e3e,2024-08-27T19:21:04.454Z,ad6e4060eb8e228a095a626aaf2d251ff3ef119d,
+openfema-73,FimaNfipClaims,2,causeOfDamage,Cause of Damage Code,"Indicates the method by which the insured's property and contents were damaged. 
+Legal values (value : description): 
+0 : Other causes; 
+1 : Tidal water overflow; 
+2 : Stream, river, or lake overflow; 
+3 : Alluvial fan overflow; 
+4 : Accumulation of rainfall or snowmelt; 
+7 : Erosion-demolition; 
+8 : Erosion-removal; 
+9 : Earth movement, landslide, land subsidence, sinkholes, etc.; 
+A : Closed basin lake; 
+B : Expedited claim handling process without site inspection; 
+C : Expedited claim handling process follow-up site inspection; 
+D : Expedited claim handling process by Adjusting Process Pilot Program (Remote Adjustment); 
+NOTE: Due to certain provisions of the Upton Jones Amendment to the National Flood Insurance Act, cause of loss codes 7 and 8 may be used only if the date of loss is prior to September 23, 1995. More than one cause of loss code can be selected. For example, you may select 2 (stream, river, or lake overflow) and D (remote adjustment) on a single claim, or any combination of letters/numbers as appropriate",text,36,True,False,True,False,1b618015-c0d3-4758-82c0-aa02f6ef2133,2024-08-27T19:21:04.454Z,dd115beb2d4e354a52c43fbb9eebb79f5a4d8f01,
+openfema-73,FimaNfipClaims,2,condominiumCoverageTypeCode,Condominium Coverage Type Code,"Indicates what type of coverage the building has (e.g., Residential Condominium Building Association Policy (RCBAP), Master Policy)
+Legal values (value : description):
+N : Not a Condominium; 
+U : Individual Condominium Unit insured by a unit owner or by an association; 
+A : Condominium Association; 
+H : Condominium Master Policy (RCBAP) High-Rise; 
+L : Condominium Master Policy (RCBAP) Low-Rise;",text,37,True,False,True,False,c518221d-a07d-41d3-9469-d8490b23d929,2024-08-27T19:21:04.454Z,e10103d015eb523847609cb28b8f1ad933b9f24f,
+openfema-73,FimaNfipClaims,2,contentsDamageAmount,Contents Damage Amount,The actual cash value amount of damage to contents in whole dollars,integer,38,True,False,True,False,d7d13c5e-28c8-4fdb-a3b3-8ea5253e8dc2,2024-08-27T19:21:04.454Z,af4c15d8260b5b9ae702a60005cc411918f6cfc5,
+openfema-73,FimaNfipClaims,2,contentsDeductibleCode,Contents Deductible Code,"The total deductible amount in dollars for contents in both main and apartment structures that can be applied against the loss.
+Legal values (value : description):
+0 : $500; 
+1 : $1,000; 
+2 : $2,000; 
+3 : $3,000; 
+4 : $4,000; 
+5 : $5,000; 
+9 : $750; 
+A : $10,000; 
+B : $15,000; 
+C : $20,000; 
+D : $25,000; 
+E : $50,000; 
+F : $1,250; 
+G : $1,500; 
+H : $200 - Used only in Group Flood Insurance Policies;",text,39,True,False,True,False,e73f2987-9852-44ae-b9b1-24593d532405,2024-08-27T19:21:04.454Z,4c5ec1f6e18185fab57e5f406ca7f60b614557cc,
+openfema-73,FimaNfipClaims,2,netContentsPaymentAmount,Net Contents Payment Amount,Net contents payment amount made to insured in dollars,decimal,40,True,False,True,False,e88a9b20-9d08-422d-b69d-ab11e7362cc1,2024-08-27T19:21:04.454Z,2b2eedc7d61bcbda48958cfe62bad4dedd503919,
+openfema-73,FimaNfipClaims,2,contentsPropertyValue,Contents Property Value,The actual cash value of the contents in whole dollars as estimated by an adjuster,integer,41,True,False,True,False,dc3b16d9-96a9-4897-b84f-faae5b0fab96,2024-08-27T19:21:04.454Z,64bcf32a62f6a218d816344abc51def8878aa4d2,
+openfema-73,FimaNfipClaims,2,disasterAssistanceCoverageRequired,Disaster Assistance Coverage Required Code,"Indicates which federal agency has required the purchase of flood insurance as a requirement for disaster assistance.
+Legal values (value : description):
+0 : Not Required; 
+1 : SBA; 
+2 : FEMA; 
+4 : HHS (canceled, effective October 1, 2009); 
+5 : Other Agency;",smallint,42,True,False,True,False,81392332-fd88-4f02-831d-9fabb10989ef,2024-08-27T19:21:04.454Z,319b725f8409cb42ffd9b41cc8941f3db5fab9a3,
+openfema-73,FimaNfipClaims,2,eventDesignationNumber,Event Designation Number (EDN),"The Event Designation Number (EDN) is a unique identifier established for a catastrophe flood event.
+NOTE: EDN has replaced FICO as the new event tracking designation. Prior to June 2020 flood events were assigned FICO number designations; after June 2020, flood events are assigned EDN number designations. A public bulletin will designate the EDN number assignments by state with corresponding dates of loss. Example: 2 letter state abbreviation (TX), 2-digit event designator (02) and 2-digit year (20). Full example would be TX0220.",text,43,True,False,True,False,ac42ee1e-96c1-4629-aea5-2dfde88e2004,2024-08-27T19:21:04.454Z,d5abd9ccdf0fc2c8ca111b8f89c1e0418495fe36,
+openfema-73,FimaNfipClaims,2,ficoNumber,Flood Insurance Claims Office (FICO) Number,"Number assigned at the time of a significant flooding event to uniquely identify each affected state. A public bulletin will designate the FICO number assignments by state with corresponding dates of loss. 
+Note: Flood Insurance Claims Office (FICO) is an NFIP claims processing office set up in a catastrophe area when a sufficient number of flood claims result from a single event. EDN has replaced FICO as the new event tracking designation. Prior to June 2020 flood events were assigned FICO number designations; after June 2020, flood events are assigned EDN number designations. A public bulletin will designate the EDN number assignments by state with corresponding dates of loss. Example: 2 letter state abbreviation (TX), 2-digit event designator (02) and 2-digit year (20). Full example would be TX0220.",smallint,44,True,False,True,False,5513a0ad-a029-45a8-b87e-be8dec90e970,2024-08-27T19:21:04.454Z,8bab436eb34a353c78ab74f25f8966aaa5b49d19,
+openfema-73,FimaNfipClaims,2,floodCharacteristicsIndicator,Flood Characteristics Indicator,"Indicates characteristics of the flood waters. 
+Legal values (value : description): 
+1 : Velocity Flow; 
+2 : Low-Velocity Flow or Ponding; 
+3 : Wave Action; 
+4 : Mudflow; 
+5 : Erosion;",smallint,45,True,False,True,False,e5e41c4c-8944-4ce4-a9dc-2e499b95bdf9,2024-08-27T19:21:04.454Z,d14c4bfa13bac79e939b5e38b82e6cce371d3638,
+openfema-73,FimaNfipClaims,2,floodWaterDuration,Flood Water Duration,Number of hours flood water remained in the insured building,smallint,46,True,False,True,False,2fe59482-0edb-4891-94a6-9e9e2bf160d6,2024-08-27T19:21:04.454Z,82b793177e5bd0cb2c50da79eccc768b93ae7e6d,
+openfema-73,FimaNfipClaims,2,floodproofedIndicator,Floodproofed Indicator,"Indicates if the insured structure is floodproofed. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. 
+NOTE: Floodproofing is any combination of structural and non-structural additions, changes, or adjustments to structures which reduce or eliminate flood damage to a property. Floodproofing may be an alternative to elevating a building to or above the BFE; however, the NFIP requires a Floodproofing Certificate prior to considering floodproofing mitigation measures in rating a structure",boolean,47,False,False,True,False,4270fde3-8c81-4816-8d99-f5093e66811e,2024-08-27T19:21:04.454Z,8d153d86e5fe922ec31ca451a61f754e127e60af,
+openfema-73,FimaNfipClaims,2,floodEvent,Flood Event,Name given to a flooding catastrophe,text,48,True,False,True,False,f90340a6-afdd-4dc5-a1a4-b164bbf45c56,2024-08-27T19:21:04.454Z,9c329e18866f06b61179082b70590f2478c9bf2f,
+openfema-73,FimaNfipClaims,2,iccCoverage,Increased Cost of Compliance (ICC) Coverage,"Amount of Increased Cost of Compliance (ICC) coverage for building in whole dollars.
+NOTE: ICC coverage is the coverage for expenses that a property owner must incur, above and beyond the cost to repair the physical damage the building actually sustained from a flooding event, to comply with mitigation requirements of state or local floodplain management ordinances or laws. Acceptable mitigation measures are elevation, floodproofing, relocation, demolition, or any combination thereof",integer,49,True,False,True,False,0b44f843-1e05-407c-bca3-cb9f9e9fc43d,2024-08-27T19:21:04.454Z,b2bd540848c91deb61418eb8388568ce77c7bc47,
+openfema-73,FimaNfipClaims,2,netIccPaymentAmount,Net Increased Cost of Compliance (ICC) Payment Amount,Net Increased Cost of Compliance (ICC) payment amount made to insured in dollars.,"decimal(8,2)",50,True,False,True,False,e56549cb-1b87-4b66-98e2-bffcf06db814,2024-08-27T19:21:04.454Z,10dcbcadd11de9e367f673b4426ed656dff87741,
+openfema-73,FimaNfipClaims,2,nfipRatedCommunityNumber,Rated NFIP Community Number,Asix-digit designation identifying the rated NFIP community. The first two numbers are the state code. The next four are the FEMA-assigned community number. An alphabetical suffix is added to a community number to identify revisions in the FIRM for that community,text,51,True,False,True,False,f61f4de0-c94c-4b53-90fe-78800e0fbf65,2024-08-27T19:21:04.454Z,4e7d2055dbc5641043e3efa9f6db12aec0739732,
+openfema-73,FimaNfipClaims,2,nfipCommunityNumberCurrent,Current NFIP Community Number,Asix-digit designation identifying the current NFIP community. The first two numbers are the state code. The next four are the FEMA-assigned community number. An alphabetical suffix is added to a community number to identify revisions in the FIRM for that community,text,52,True,False,True,False,b3c624b2-d25d-4601-8f73-57147a5af4cc,2024-08-27T19:21:04.454Z,615cb71599f0bcbe84d906c9f2d1775dc31b59cb,
+openfema-73,FimaNfipClaims,2,nfipCommunityName,Rated NFIP Community Name,Alocalpoliticalentitythat has the authority to adopt and enforce floodplain ordinances for the area under its jurisdiction.,text,53,True,False,True,False,c3ceccb6-2960-4123-8662-693e9696ac4f,2024-08-27T19:21:04.454Z,9466c6625b50799807a948c483595bfaac0aa821,
+openfema-73,FimaNfipClaims,2,nonPaymentReasonContents,Contents Non-Payment Reason,"Reason why a claim was not paid for the contents of a property. 
+TRRP Field: Claim Closed Without Payment Reason - Contents 
+Legal values (value : description): 
+01 : Claim denied that was less than deductible; 
+02 : Seepage; 
+03 : Backup drains; 
+04 : Shrubs not covered; 
+05 : Sea wall; 
+06 : Not actual flood; 
+07 : Loss in progress; 
+08 : Failure to pursue claim; 
+09 : Debris removal only; 
+10 : Fire; 
+11 : Fence damage; 
+12 : Hydrostatic pressure; 
+13 : Drainage clogged; 
+14 : Boat piers; 
+15 : Not insured, damage before inception of policy; 
+16 : Not insured, wind damage; 
+17 : Type of erosion not included in definition of flood or flooding; 
+18 : Landslide; 
+19 : Type of mudflow not included in definition of flood or flooding; 
+20 : No demonstrable damage; 
+97 : Other; 
+98 : Error-delete claim (no assignment); 
+99 : Erroneous assignment;",text,54,True,False,True,False,248f7be1-9c7b-4aaf-8e77-4865fcfb7dfc,2024-08-27T19:21:04.454Z,0d979570ad18e9d6573bd80a9a428002e9b5be74,
+openfema-73,FimaNfipClaims,2,nonPaymentReasonBuilding,Building Non-Payment Reason,"Reason why a claim was not paid for a property structure. 
+TRRP Field: Claim Closed Without Payment Reason - Building 
+Legal values (value : description): 
+01 : Claim denied that was less than deductible; 
+02 : Seepage; 
+03 : Backup drains; 
+04 : Shrubs not covered; 
+05 : Sea wall; 
+06 : Not actual flood; 
+07 : Loss in progress; 
+08 : Failure to pursue claim; 
+09 : Debris removal only; 
+10 : Fire; 
+11 : Fence damage; 
+12 : Hydrostatic pressure; 
+13 : Drainage clogged; 
+14 : Boat piers; 
+15 : Not insured, damage before inception of policy; 
+16 : Not insured, wind damage; 
+17 : Type of erosion not included in definition of flood or flooding; 
+18 : Landslide; 
+19 : Type of mudflow not included in definition of flood or flooding; 
+20 : No demonstrable damage; 
+97 : Other; 
+98 : Error-delete claim (no assignment); 
+99 : Erroneous assignment;",text,55,True,False,True,False,07a93410-9951-4811-9374-20173df35a67,2024-08-27T19:21:04.454Z,8029c05d4cb1ba5b73931fea0235df6603fc7448,
+openfema-73,FimaNfipClaims,2,numberOfUnits,Number of Units,The number of residential and nonresidential units covered by the Condominium Master Policy,smallint,56,True,False,True,False,c3cd5f94-47e6-420d-a4ce-9a3669d69195,2024-08-27T19:21:04.454Z,9fe1479e6567b08d7381a41691bd5e363c5e84c3,
+openfema-73,FimaNfipClaims,2,buildingReplacementCost,Building Replacement Cost,"Estimated cost in whole dollars to replace the building as reported by the insurer. 
+NOTE : Replacement cost is not market value, and it does not include the cost of the land or contents. It is strictly the estimated cost to reconstruct the building",bigint,57,True,False,True,False,b4f7e9d0-17d8-44b2-af1a-918b56aa4c78,2024-08-27T19:21:04.454Z,8dd946cc4d40bc76a6603b8a31a2795134532127,
+openfema-73,FimaNfipClaims,2,contentsReplacementCost,Contents Replacement Cost,"Estimated cost in whole dollars to replace the contents as reported by the insurer. 
+NOTE : Replacement cost is not market value, and it does not include the cost of the land or building. It is strictly the estimated cost to replace the contents.",integer,58,True,False,True,False,4abe8e56-d773-4149-8de0-f3122af9ec0e,2024-08-27T19:21:04.454Z,f4b29499f763d494f5eaecc515c5646bef55054d,
+openfema-73,FimaNfipClaims,2,replacementCostBasis,Replacement Cost Basis,"This indicates whether the building claim was settled on a replacement cost basis. 
+Legal values (value: description):
+R: Replacement Cost Basis;
+A: Actual Cash Value Basis;",text,59,True,False,True,False,df2cace9-a059-4ad1-9359-0eef4104a842,2024-08-27T19:21:04.454Z,0de1943548bddbe1c0228f10a1cabb9051b87586,
+openfema-73,FimaNfipClaims,2,stateOwnedIndicator,State-Owned Indicator,Indicates whether insured property is state owned. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'.  NOTE: State owned property is land or other assets that are legally owned by  the state,boolean,60,False,False,True,False,e20c5f1c-4f66-4856-9be5-ec2db038cd25,2024-08-27T19:21:04.454Z,443e6d2550d0ddc9fb421703ca1413fde4cfec6f,
+openfema-73,FimaNfipClaims,2,waterDepth,Water Depth,Depth of flood water in inches. Note: there are instances where measurements were provided in feet.,smallint,61,True,False,True,False,4293a6c7-473b-4c4a-8389-9531a99a203a,2024-08-27T19:21:04.454Z,b0e7e3920c67f41bb74dfde31cdf6e116597457f,
+openfema-73,FimaNfipClaims,2,floodZoneCurrent,Current Flood Zone,"Flood zone derived from the Flood Insurance Rate Map (FIRM) where the insured property is currently located.
+A - Special Flood with no Base Flood Elevation on FIRM; 
+AE, A1-A30 - Special Flood with Base Flood Elevation on FIRM; 
+A99 - Special Flood with Protection Zone; 
+AH, AHB* - Special Flood with Shallow Ponding; 
+AO, AOB* - Special Flood with Sheet Flow; 
+X, B - Moderate Flood from primary water source.  Pockets of areas subject to drainage problems; 
+X, C - Minimal Flood from primary water source.  Pockets of areas subject to drainage problems; 
+D - Possible Flood; 
+V - Velocity Flood with no Base Flood Elevation on FIRM; 
+VE, V1-V30 - Velocity Flood with Base Flood Elevation on FIRM; 
+AE, VE, X - New zone designations used on new maps starting January 1, 1986, in lieu of A1-A30, V1-V30, and B and C; 
+AR - A Special Flood Hazard Area that results from the decertification of a previously accredited flood protection system that is determined to be in the process of being restored to provide base flood protection; 
+AR Dual Zones - (AR/AE, AR/A1-A30, AR/AH, AR/AO, AR/A) Areas subject to flooding from failure of the flood protection system (Zone AR) which also overlap an existing Special Flood Hazard Area as a dual zone; 
+*AHB, AOB, ARE, ARH, ARO, and ARA are not risk zones shown on a map, but are acceptable values for rating purposes",text,62,True,False,True,False,a54d33c4-72af-4980-8f84-a09348349415,2024-08-27T19:21:04.454Z,3a449fe0ef3f001c62c78497e1cb08878f426476,
+openfema-73,FimaNfipClaims,2,buildingDescriptionCode,Building Description Code,"Indicates the description of the use of the insured building.
+Legal values (value : description):
+01 : Main House; 
+02 : Detached Guest House; 
+03 : Detached Garage; 
+04 : Agricultural Building; 
+05 : Warehouse; 
+06 : Pool House, Clubhouse, Recreation Building; 
+07 : Tool/Storage Shed; 
+08 : Other; 
+09 : Barn; 
+10 : Apartment Building; 
+11 : Apartment - Unit; 
+12 : Cooperative Building; 
+13 : Cooperative - Unit; 
+14 : Commercial Building; 
+15 : Condominium (Entire Building); 
+16 : Condominium - Unit; 
+17 : House of Worship; 
+18 : Manufactured (Mobile) Home; 
+19 : Travel Trailer; 
+20 : Townhouse/Rowhouse;",smallint,63,True,False,True,False,11a0b9b6-a2b1-4844-a5d6-f4eee9da15d8,2024-08-27T19:21:04.454Z,efd185e4833e74abf166be46f98bd9e3d4dff4a7,
+openfema-73,FimaNfipClaims,2,rentalPropertyIndicator,Rental Property Indicator,"Indicates if the property is a rental property. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. NOTE: A rental property is a property from which the owner receives payment from the occupant(s), known as tenants, in return for occupying or using the property. Rental properties may be either residential or commercial",boolean,64,False,False,True,False,2a33c00b-c5d5-48a0-82fd-93fc4a8d7bcc,2024-08-27T19:21:04.454Z,ff00958672946a337002d25360fdf8ac7a95eab6,
+openfema-73,FimaNfipClaims,2,state,State,The two-character alpha abbreviation of the state in which the insured property is located,text,65,True,False,True,False,be6604b9-46a6-4fbf-a9e2-c9be6fb2007b,2024-08-27T19:21:04.454Z,334d4228888d5623645597c92ae92149e4d75037,
+openfema-73,FimaNfipClaims,2,reportedCity,Reported City,This is the city of the insured property as reported to us by our Write Your Own (WYO) partners,text,66,True,False,True,False,c64c578d-b697-4e01-b20d-59f7a98b6822,2024-08-27T19:21:04.454Z,8600dd3fd10aa3e7c0d27661879eb7f6fbad7c44,
+openfema-73,FimaNfipClaims,2,reportedZipCode,Reported Zip Code,5-digit Postal Zip Code of the insured property as reported by WYO partners,text,67,True,False,True,False,e91a19ae-9c66-4ebf-b694-c094a98320b7,2024-08-27T19:21:04.454Z,fb0f58f7eaa9f94097b4329fcdb8a00f7c5fa9f3,
+openfema-73,FimaNfipClaims,2,countyCode,County Code,"FIPS code uniquely identifying the primary County (e.g., 011 represents Broward County) associated with the project. Note, the County Code field may not reflect the individual county the property is located as projects can be associated with more than one county",text,68,True,False,True,False,4a40ef24-1885-4553-910e-2eaa4e88dc56,2024-08-27T19:21:04.454Z,0bccbbe60dd0ecb0872e87f1d4955336901370a4,
+openfema-73,FimaNfipClaims,2,censusTract,Census Tract,U.S. Census Bureau defined census tracts; statistical subdivisions of a county or equivalent entity that are updated prior to each decennial census. The NFIP relies on our geocoding service to assign 11-digit census tract codes,text,69,True,False,True,False,b7948f15-f64e-406e-8028-4f6da8c8f48f,2024-08-27T19:21:04.454Z,0f5a536267c5f8a00dacd63ab1d8c71731728d64,
+openfema-73,FimaNfipClaims,2,censusBlockGroupFips,Census Block Group FIPS,"The first digit of the census block number identifies the block group. Block numbers beginning with a zero (in Block Group 0) are associated with water-only areas. Typically, Block Groups have a population of 600 to 3,000 people.",text,70,True,False,True,False,b5b80826-065e-44aa-98ee-65a8a3aa3c99,2024-08-27T19:21:04.454Z,79c1dde3b0b137dfa8eebed442b97951e440bbb2,
+openfema-73,FimaNfipClaims,2,latitude,Latitude,Approximate latitude of the insured building (to 1 decimal place). This represents the approximate location of the insured property. The precision has been lessened to ensure individual privacy. This may result in a point location that exists in an incorrect county or state. Use the state and county fields for record aggregation for these dimensions,"decimal(9,1)",71,True,False,True,False,a3ffbbc7-2af4-47e8-8406-19aa0038fefa,2024-08-27T19:21:04.454Z,0a546b9587f2617a3bdee20255bfa3ec20bcbb1c,
+openfema-73,FimaNfipClaims,2,longitude,Longitude,Approximate longitude of the insured building (to 1 decimal place). This represents the approximate location of the insured property. The precision has been lessened to ensure individual privacy. This may result in a point location that exists in an incorrect county or state. Use the state and county fields for record aggregation for these dimensions,"decimal(9,1)",72,True,False,True,False,5f36c9c0-7ca2-44ab-843a-c251f872bdb2,2024-08-27T19:21:04.454Z,245fe176844bc4300e45ca404a1ec9909f694eb9,
+openfema-73,FimaNfipClaims,2,id,ID,Unique ID assigned to the record,text,73,True,False,False,True,5e58cecc-6dd0-44cd-b57f-c7839bc32d80,2024-08-27T19:21:04.454Z,e2efda30f7c5afc1d0d600b65abde21ea84cfd8b,
