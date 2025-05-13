@@ -28,6 +28,7 @@ Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount
 
 
 
+
 ![year-count](figures/year-count.png)
 Figure xx. Number of NFIP Claims by Year from 1978 to 2024.
 
@@ -75,9 +76,10 @@ To learn more about the NFIP:
 Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
 
 # 2. Notebooks
-- [Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explore NFIP Claims data with DuckDB with ease.
-- [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Redacted Claims dataset from OpenFEMA.
-- [Generate Figures](https://github.com/mebauer/duckdb-fema-nfip/blob/main/figures.ipynb): This notebook is dedicated to generating figures and tables displayed on this page. For a more detailed analysis of the NFIP data, refer to the [analysis.ipynb](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb) notebook.
+- [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Claims dataset from OpenFEMA.
+- [Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explores NFIP Claims data with DuckDB with ease.
+- [Generate Figures](https://github.com/mebauer/duckdb-fema-nfip/blob/main/figures.ipynb): Dedicated to generating figures and tables displayed on this page. For a more detailed analysis of the NFIP data, refer to the [analysis.ipynb](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb) notebook.
+- [Metadata](https://github.com/mebauer/duckdb-fema-nfip/blob/main/metadata.ipynb): Examines the metadata for the NFIP Claims dataset. Here, we retrieve and save the [data dictionary](https://github.com/mebauer/duckdb-fema-nfip/blob/main/data-dictionary.csv).
 
 # 3. Data 
 OpenFEMA Dataset: FIMA NFIP Redacted Claims - v2. Retrieved from https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2. This product uses the FEMA OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
@@ -112,10 +114,15 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 **Verisk**
 - Modeling Fundamentals: Evaluating U.S. Flood Model Loss Output with Historical Loss Experience (2020): https://www.verisk.com/blog/modeling-fundamentals-evaluating-u-s--flood-model-loss-output-with-historical-loss-experience/
 
+**Milliman**
+- Residential Flood Risk in the United States: Quantifying Flood Losses, Mortgage Risk and Sea Level Rise (2020): https://www.soa.org/globalassets/assets/files/resources/research-report/2020/soa-flood-report.pdf
+- Insights into consumer demand for flood insurance: Trends in take-up (2021): https://www.milliman.com/en/insight/insights-into-consumer-demand-for-flood-insurance-trends-in-take-up
+- Estimating undisclosed flood risk in real estate transactions (2025): https://edge.sitecorecloud.io/millimaninc5660-milliman6442-prod27d5-0001/media/Milliman/PDFs/2025-Articles/1-13-25_NRDC_Estimating-Undisclosed-Flood-Risk.pdf
+
 **Insurance Information Institute**
-- Facts + Statistics: Flood insurance (2024): https://www.iii.org/fact-statistic/facts-statistics-flood-insurance
-- Spotlight on: Flood insurance (2024): https://www.iii.org/article/spotlight-on-flood-insurance
 - Flood: State of the Risk (2023): https://www.iii.org/article/flood-state-of-the-risk
+- Spotlight on: Flood insurance (2024): https://www.iii.org/article/spotlight-on-flood-insurance
+- Facts + Statistics: Flood insurance (2024): https://www.iii.org/fact-statistic/facts-statistics-flood-insurance
     
 ## Community Open Data:
 **Norfolk Open Data**  
