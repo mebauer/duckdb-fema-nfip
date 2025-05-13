@@ -24,7 +24,7 @@ Data as of 05-04-2025.
 Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimM |   paidTotalClaimM |   paidBuildingM |   paidContentsM |   paidICCM |
 |--------------:|------------------:|----------------:|----------------:|-----------:|
-|          2.71 |             87775 |         71337.6 |         15486.1 |     951.23 |
+|          2.71 |          87775.00 |        71337.63 |        15486.14 |     951.23 |
 
 
 
