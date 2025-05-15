@@ -24,8 +24,7 @@ Data as of 05-04-2025.
 Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimM |   paidTotalClaimM |   paidBuildingM |   paidContentsM |   paidICCM |
 |--------------:|------------------:|----------------:|----------------:|-----------:|
-|          2.71 |          87775.00 |        71337.63 |        15486.14 |     951.23 |
-
+|          2.71 |          88145.83 |        71665.54 |        15528.23 |     952.06 |
 
 
 
@@ -40,10 +39,10 @@ Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2025 |   averagePaidClaim2025 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
 |      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 27088 |                 130017 |
-|      2 |         2012 | Hurricane Sandy          |        144848 |              8957 |                 12553 |                  86668 |
-|      3 |         2017 | Hurricane Harvey         |         92397 |              9055 |                 11846 |                 128210 |
-|      4 |         2024 | Hurricane Helene         |         57738 |              5802 |                  5976 |                 103509 |
-|      5 |         2022 | Hurricane Ian            |         48755 |              4830 |                  5457 |                 111945 |
+|      2 |         2012 | Hurricane Sandy          |        144848 |              8957 |                 12553 |                  86669 |
+|      3 |         2017 | Hurricane Harvey         |         92398 |              9055 |                 11846 |                 128209 |
+|      4 |         2024 | Hurricane Helene         |         57843 |              6027 |                  6208 |                 107334 |
+|      5 |         2022 | Hurricane Ian            |         48754 |              4838 |                  5467 |                 112139 |
 |      6 |         2008 | Hurricane Ike            |         58126 |              2702 |                  4067 |                  69972 |
 |      7 |         2016 | Mid-summer severe storms |         30018 |              2533 |                  3397 |                 113169 |
 |      8 |         2004 | Hurricane Ivan           |         20137 |              1325 |                  2273 |                 112900 |
@@ -120,7 +119,6 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 - [Modeling Fundamentals: Evaluating U.S. Flood Model Loss Output with Historical Loss Experience (2020](https://www.verisk.com/blog/modeling-fundamentals-evaluating-u-s--flood-model-loss-output-with-historical-loss-experience/)
 
 **Insurance Information Institute**
-- [Flood: State of the Risk (2023)](https://www.iii.org/article/flood-state-of-the-risk)
 - [Spotlight on: Flood insurance (2024)](https://www.iii.org/article/spotlight-on-flood-insurance)
 - [Facts + Statistics: Flood insurance (2024)](https://www.iii.org/fact-statistic/facts-statistics-flood-insurance)
     
