@@ -21,7 +21,7 @@ Last Data Refresh: 05-14-2025.
 
 --------------- 
 
-**Table xx. Number and Amount Paid on NFIP Claims (both in millions).** Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
+**Table xx. Number and Amount Paid on NFIP Claims (both in millions).** Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims. This table includes claims from 1978 through the most recent effective data refresh specified above.
 |   countClaimM |   paidTotalClaimM |   paidBuildingM |   paidContentsM |   paidICCM |
 |--------------:|------------------:|----------------:|----------------:|-----------:|
 |          2.71 |         88,145.83 |       71,665.54 |       15,528.23 |     952.06 |
@@ -39,16 +39,16 @@ Last Data Refresh: 05-14-2025.
 **Table xx. Top 10 Costliest Flood Events by NFIP Claim Payments (in millions).** Ranked by total amount paid, adjusted to 2025 dollars (i.e. paidTotalClaimM2025). Original payment amounts at the time of each event are shown in paidTotalClaimM.
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2025 |   averagePaidClaim2025 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
-|      1 |         2005 | Hurricane Katrina        |        208348 |         16,261.70 |             27,088.99 |             130,017.98 |
-|      2 |         2012 | Hurricane Sandy          |        144848 |          8,957.47 |             12,553.89 |              86,669.40 |
-|      3 |         2017 | Hurricane Harvey         |         92398 |          9,055.71 |             11,846.27 |             128,209.19 |
-|      4 |         2024 | Hurricane Helene         |         57843 |          6,027.67 |              6,208.53 |             107,334.11 |
-|      5 |         2022 | Hurricane Ian            |         48754 |          4,838.68 |              5,467.26 |             112,139.68 |
-|      6 |         2008 | Hurricane Ike            |         58126 |          2,702.51 |              4,067.22 |              69,972.54 |
-|      7 |         2016 | Mid-summer severe storms |         30018 |          2,533.53 |              3,397.11 |             113,169.21 |
-|      8 |         2004 | Hurricane Ivan           |         20137 |          1,325.42 |              2,273.47 |             112,900.30 |
-|      9 |         2001 | Tropical Storm Allison   |         35561 |          1,104.98 |              2,004.68 |              56,373.08 |
-|     10 |         2011 | Hurricane Irene          |         52493 |          1,347.40 |              1,943.62 |              37,026.28 |
+|      1 |         2005 | Hurricane Katrina        |        208348 |          16261.70 |              27088.99 |              130017.98 |
+|      2 |         2012 | Hurricane Sandy          |        144848 |           8957.47 |              12553.89 |               86669.40 |
+|      3 |         2017 | Hurricane Harvey         |         92398 |           9055.71 |              11846.27 |              128209.19 |
+|      4 |         2024 | Hurricane Helene         |         57843 |           6027.67 |               6208.53 |              107334.11 |
+|      5 |         2022 | Hurricane Ian            |         48754 |           4838.68 |               5467.26 |              112139.68 |
+|      6 |         2008 | Hurricane Ike            |         58126 |           2702.51 |               4067.22 |               69972.54 |
+|      7 |         2016 | Mid-summer severe storms |         30018 |           2533.53 |               3397.11 |              113169.21 |
+|      8 |         2004 | Hurricane Ivan           |         20137 |           1325.42 |               2273.47 |              112900.30 |
+|      9 |         2001 | Tropical Storm Allison   |         35561 |           1104.98 |               2004.68 |               56373.08 |
+|     10 |         2011 | Hurricane Irene          |         52493 |           1347.40 |               1943.62 |               37026.28 |
 
 <br />
 
