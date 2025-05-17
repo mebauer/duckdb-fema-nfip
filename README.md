@@ -17,25 +17,26 @@ Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA AP
 
 Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
 
-Last Data Refresh: 05-14-2025
+Last Data Refresh: 05-14-2025.
 
--- 
+--------------- 
 
-Table xx. Number and Amount Paid on NFIP Claims (both in millions). Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
+**Table xx. Number and Amount Paid on NFIP Claims (both in millions).** Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
 |   countClaimM |   paidTotalClaimM |   paidBuildingM |   paidContentsM |   paidICCM |
 |--------------:|------------------:|----------------:|----------------:|-----------:|
 |          2.71 |          88145.83 |        71665.54 |        15528.23 |     952.06 |
 
-
+<br />
 
 ![year-count](figures/year-count.png)
-Figure xx. Number of NFIP Claims by Year from 1978 to 2024.
+**Figure xx. Number of NFIP Claims by Year from 1978 to 2024.**
 
 ![year-amount-paid](figures/year-amount-paid.png)
-Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2024 Dollars).
+**Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2024 Dollars).**
 
+<br />
 
-Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($ millions). Table is ranked on Total Amount Paid in 2025 dollars (i.e. paidTotalClaimM2025). The column paidTotalClaimM is the amount paid ($ millions) when occurred.
+**Table xx. Top 10 Costliest Flood Events by NFIP Claim Payments (in millions).** Ranked by total amount paid, adjusted to 2025 dollars (i.e. paidTotalClaimM2025). Original payment amounts at the time of each event are shown in paidTotalClaimM.
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2025 |   averagePaidClaim2025 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
 |      1 |         2005 | Hurricane Katrina        |        208348 |             16261 |                 27088 |                 130017 |
@@ -49,13 +50,13 @@ Table xx. Top 10 Most Costly Flood Events By Total Amount Paid on NFIP Claims ($
 |      9 |         2001 | Tropical Storm Allison   |         35561 |              1104 |                  2004 |                  56373 |
 |     10 |         2011 | Hurricane Irene          |         52493 |              1347 |                  1943 |                  37026 |
 
-
+<br />
 
 ![figures/count-claims-map](figures/count-claims-map.png)
-Figure xx. Number of NFIP Claims by State.
+**Figure xx. Number of NFIP Claims by State from 1978 to 2024.**
 
 ![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
-Figure xx. Number of NFIP Claims Normalized by State Area.
+**Figure xx. Number of NFIP Claims Normalized by State Area from 1978 to 2024.**
 
 # 1. Introduction
 The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by [FEMA](https://www.fema.gov/) and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, FEMA [released](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) two datasets on [OpenFEMA](https://www.fema.gov/about/reports-and-data/openfema) related to the NFIP to promote transparency, reduce complexity for public data requests, and to improve how the agency’s stakeholders interact with and understand the NFIP:
