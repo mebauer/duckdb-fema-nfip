@@ -39,6 +39,7 @@ Last Data Refresh: 05-14-2025.
 ![year-count](figures/year-count.png)
 **Figure xx. Number of NFIP Claims by Year from 1978 to 2024.**
 
+
 ![year-amount-paid](figures/year-amount-paid.png)
 **Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2024 Dollars).**
 
@@ -63,6 +64,7 @@ Last Data Refresh: 05-14-2025.
 ![figures/count-claims-map](figures/count-claims-map.png)
 **Figure xx. Number of NFIP Claims by State from 1978 to 2025.**
 
+
 ![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
 **Figure xx. Number of NFIP Claims Normalized by State Area from 1978 to 2025.**
 
@@ -77,7 +79,7 @@ With over 69 million policies and 2.7 million claims transactions as of May 14, 
 Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. [Guidance](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2) from OpenFEMA:
 >In order to improve accessibility, we have one compressed file. Due to the file size we recommend using Access, SQL, or another programming/data management tool to visualize and manipulate the data, as Excel will not be able to process files this large without data loss.
 
-OpenFEMA also provides a lot of great recommendations with their guide [OpenFEMA Guide to Working with Large Data Sets](https://www.fema.gov/about/openfema/working-with-large-data-sets).
+OpenFEMA also provides a lot of great recommendations with their guide [OpenFEMA Guide to Working with Large Data Sets](https://www.fema.gov/about/openfema/working-with-large-data-sets):
 >Once data has been successfully downloaded, viewing, manipulating, and analyzing data can be a challenge. A spreadsheet program such as Microsoft Excel has a data size limit. Large data sets will exceed spreadsheet tool row limits and will not open without data loss. Common text editors such as Notepad++ or Sublime have 2 GB file limits, again preventing the opening, search, and editing capabilities from working. Using different tools, extracting subsets, and/or aggregating detailed data are good approaches for making analysis easier.
 
 To address this, I designed a tutorial demonstrating how to analyze the datasets with my laptop locally. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
@@ -125,7 +127,7 @@ OpenFEMA Datasets:
 - [FEMA Flood Data: 2.4 Million Damage Claims and Counting (2019)](https://www.nrdc.org/bio/anna-weber/fema-flood-data-24-million-damage-claims-and-counting)
 - [FEMA Flood Data: What We Still Need to Know (2019)](https://www.nrdc.org/bio/anna-weber/fema-flood-data-what-we-still-need-know)
 - [FEMA Puts New Data on the Map for Policymakers (2020)](https://www.huduser.gov/portal/periodicals/cityscpe/vol22num1/ch10.pdf)
-i
+
 **Milliman**
 - [Residential Flood Risk in the United States: Quantifying Flood Losses, Mortgage Risk and Sea Level Rise (2020)](https://www.soa.org/globalassets/assets/files/resources/research-report/2020/soa-flood-report.pdf)
 - [Insights into consumer demand for flood insurance: Trends in take-up (2021)](https://www.milliman.com/en/insight/insights-into-consumer-demand-for-flood-insurance-trends-in-take-up)
