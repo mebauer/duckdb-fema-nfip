@@ -97,20 +97,20 @@ In the [Additional Resources](#4-Additional-Resources) section, you’ll find so
 Personal identifiable information (PII) is redacted and data is anonymized to the census tract, reported zip code, and to one decimal point (.1) digit of latitude and longitude. Please see the official guidance at [Frequently Asked Questions about NFIP Policies and Claims Data](https://nfipservices.floodsmart.gov/frequently-asked-questions-about-nfip-policies-and-claims-data):
 >Q: How are you protecting policyholders’ privacy?
 >
->A: Personal identifiable information (PII) is redacted and data is anonymized to the census tract, reported zip code, and to one >decimal point (.1) digit of latitude and longitude. If mapped, flood insurance policies and claims may appear to be clustered at >a particular location due to this anonymization.
+>A: Personal identifiable information (PII) is redacted and data is anonymized to the census tract, reported zip code, and to one decimal point (.1) digit of latitude and longitude. If mapped, flood insurance policies and claims may appear to be clustered at a particular location due to this anonymization.
 >
 >Q: Why can’t the National Flood Insurance Program provide address-level data?
 >
->A: FEMA has a responsibility to protect policyholder privacy pursuant to the Privacy Act of 1974. In the data published in June >2019, FEMA provided the most granular data possible to promote transparency while protecting customer privacy consistent with >the Privacy Act of 1974 and the Freedom of Information Act (FOIA). This is consistent with additional FEMA programmatic datasets >posted on OpenFEMA as well.
+>A: FEMA has a responsibility to protect policyholder privacy pursuant to the Privacy Act of 1974. In the data published in June 2019, FEMA provided the most granular data possible to promote transparency while protecting customer privacy consistent with the Privacy Act of 1974 and the Freedom of Information Act (FOIA). This is consistent with additional FEMA programmatic datasets posted on OpenFEMA as well.
 
 Geographic constraints:
 >Q: Why is there latitude and longitude in NFIP datasets, I thought the datasets were anonymized?
 >
->A: Latitude and longitude can be used to identify a specific location. In order to protect policy holder privacy, latitude and >longitude are truncated to one decimal point. The more significant digits (decimals), the more precise a set of coordinates can >be. The level of data that FEMA provides for users will find the coordinates accurate to within approximately six miles.
+>A: Latitude and longitude can be used to identify a specific location. In order to protect policy holder privacy, latitude and longitude are truncated to one decimal point. The more significant digits (decimals), the more precise a set of coordinates can be. The level of data that FEMA provides for users will find the coordinates accurate to within approximately six miles.
 >
 >Q: Which geographic fields are best to use for aggregation?
 >
->A: Census tract and county fields are best to use for aggregation since they are derived from a policy or claim geocode (i.e. >latitude and longitude are generated from provided address information). Therefore, we are confident that these values are >reported with a relatively high degree of accuracy.
+>A: Census tract and county fields are best to use for aggregation since they are derived from a policy or claim geocode (i.e. latitude and longitude are generated from provided address information). Therefore, we are confident that these values are reported with a relatively high degree of accuracy.
 
 # 2. Notebooks
 - [Metadata](https://github.com/mebauer/duckdb-fema-nfip/blob/main/metadata.ipynb): Examines the metadata for the NFIP Claims and Policies datasets. Here, we retrieve and save the data dictionaries.
