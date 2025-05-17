@@ -25,9 +25,9 @@ From OpenFEMA:
 
 Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
 
-Last Data Refresh: 05-14-2025.
-
 --------------- 
+
+Last Data Refresh: 05-14-2025.
 
 **Table xx. Number and Amount Paid on NFIP Claims (both in millions).** Total amount paid, in this analysis, is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims. This table includes claims from 1978 through the most recent effective data refresh specified above.
 |   countClaimM |   paidTotalClaimM |   paidBuildingM |   paidContentsM |   paidICCM |
@@ -74,20 +74,21 @@ The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NF
 
 With over 69 million policies and 2.7 million claims transactions as of May 14, 2025, this is one of the largest openly available insurance datasets in the United States and possibly the world. This project examines both the NFIP Redacted Claims and Policies datasets, but more importantly, demonstrates how to query and manipulate the data with ease.
 
-Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. Guidance from [OpenFEMA](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2):
+Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. [Guidance](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2) from OpenFEMA:
 >In order to improve accessibility, we have one compressed file. Due to the file size we recommend using Access, SQL, or another programming/data management tool to visualize and manipulate the data, as Excel will not be able to process files this large without data loss.
 
 OpenFEMA also provides a lot of great recommendations with their guide [OpenFEMA Guide to Working with Large Data Sets](https://www.fema.gov/about/openfema/working-with-large-data-sets).
+>Once data has been successfully downloaded, viewing, manipulating, and analyzing data can be a challenge. A spreadsheet program such as Microsoft Excel has a data size limit. Large data sets will exceed spreadsheet tool row limits and will not open without data loss. Common text editors such as Notepad++ or Sublime have 2 GB file limits, again preventing the opening, search, and editing capabilities from working. Using different tools, extracting subsets, and/or aggregating detailed data are good approaches for making analysis easier.
 
-To address this, I designed a tutorial demonstrating how to analyze the dataset with my local laptop. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
+To address this, I designed a tutorial demonstrating how to analyze the datasets with my laptop locally. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
 
 The ultimate goal of this project is to promote the dataset for academic research and to assist communities in analyzing and downloading the data. This dataset is one of my favorites, and I hope you find these tutorials helpful in advancing the study and analysis of the NFIP.
 
 To learn more about the NFIP:
-- [NFIP Website](https://www.fema.gov/flood-insurance)
-- For more information about what’s covered and to find a policy, visit [FloodSmart](https://www.floodsmart.gov/why-buy-flood-insurance)
+- [NFIP Website](https://www.fema.gov/flood-insurance): NFIP information from FEMA.
+- [FloodSmart](https://www.floodsmart.gov/): For more information about what’s covered and to find a policy.
 
-Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s). Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions) for further information regarding the usage and access of OpenFEMA datasets.
+In the [Additional Resources](#4-Additional-Resources) section, you’ll find some of my favorite reports and analyses related to the NFIP, particularly from the early days of the datasets' release. I highly recommend checking them out.
 
 # 2. Notebooks
 - [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Claims dataset from OpenFEMA.
@@ -96,9 +97,9 @@ Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA AP
 - [Metadata](https://github.com/mebauer/duckdb-fema-nfip/blob/main/metadata.ipynb): Examines the metadata for the NFIP Claims dataset. Here, we retrieve and save the [data dictionary](https://github.com/mebauer/duckdb-fema-nfip/blob/main/data-dictionary.csv).
 
 # 3. Data 
-OpenFEMA Dataset: FIMA NFIP Redacted Claims - v2. Retrieved from https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2. This product uses the FEMA OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
-
-Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions) for further information regarding the usage and access of OpenFEMA datasets.
+OpenFEMA Datasets:
+- FIMA NFIP Redacted Claims - v2. Retrieved from https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2.
+- FIMA NFIP Redacted Policies - v2. Retrieved from https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2.
 
 # 4. Additional Resources
 ## FEMA:
@@ -124,7 +125,7 @@ Please refer to the [OpenFEMA Terms and Conditions](https://www.fema.gov/about/o
 - [FEMA Flood Data: 2.4 Million Damage Claims and Counting (2019)](https://www.nrdc.org/bio/anna-weber/fema-flood-data-24-million-damage-claims-and-counting)
 - [FEMA Flood Data: What We Still Need to Know (2019)](https://www.nrdc.org/bio/anna-weber/fema-flood-data-what-we-still-need-know)
 - [FEMA Puts New Data on the Map for Policymakers (2020)](https://www.huduser.gov/portal/periodicals/cityscpe/vol22num1/ch10.pdf)
-
+i
 **Milliman**
 - [Residential Flood Risk in the United States: Quantifying Flood Losses, Mortgage Risk and Sea Level Rise (2020)](https://www.soa.org/globalassets/assets/files/resources/research-report/2020/soa-flood-report.pdf)
 - [Insights into consumer demand for flood insurance: Trends in take-up (2021)](https://www.milliman.com/en/insight/insights-into-consumer-demand-for-flood-insurance-trends-in-take-up)
