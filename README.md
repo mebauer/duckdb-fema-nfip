@@ -13,7 +13,15 @@ Author: Mark Bauer
     * [Other](#Other)
 * [5. Say Hello!](#5-Say-Hello)  
 
-Note: This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
+### Disclaimer
+
+This guide is intended for illustrative purposes only and was created to share methods I’ve found helpful when working with NFIP datasets, particularly within the open source community. FEMA does not endorse any of the products mentioned in this guide and makes no claim as to the assurance of their efficacy or to the security of the products. See below for the language suggested by OpenFEMA.
+
+This analysis uses the Federal Emergency Management Agency’s OpenFEMA API, but is not endorsed by FEMA. The Federal Government or FEMA cannot vouch for the data or analyses derived from these data after the data have been retrieved from the Agency's website(s).
+
+From OpenFEMA:
+
+>Respect the OpenFEMA API and content on this website. Use the Site in a lawful manner. Do not modify the Site or attempt to use it to publish or transmit malicious software or content. FEMA shall not be liable for any damages resulting from the use of this website, API services, or content. Do not attempt to reidentify the individuals whose data may be aggregated. We may suspend your access to this website if we feel you have not complied with these terms and conditions.
 
 Read more about OpenFEMA's [Terms and Conditions](https://www.fema.gov/about/openfema/terms-conditions).
 
@@ -39,33 +47,39 @@ Last Data Refresh: 05-14-2025.
 **Table xx. Top 10 Costliest Flood Events by NFIP Claim Payments (in millions).** Ranked by total amount paid, adjusted to 2025 dollars (i.e. paidTotalClaimM2025). Original payment amounts at the time of each event are shown in paidTotalClaimM.
 |   rank |   yearOfLoss | floodEvent               |   countClaims |   paidTotalClaimM |   paidTotalClaimM2025 |   averagePaidClaim2025 |
 |-------:|-------------:|:-------------------------|--------------:|------------------:|----------------------:|-----------------------:|
-|      1 |         2005 | Hurricane Katrina        |        208348 |          16261.70 |              27088.99 |              130017.98 |
-|      2 |         2012 | Hurricane Sandy          |        144848 |           8957.47 |              12553.89 |               86669.40 |
-|      3 |         2017 | Hurricane Harvey         |         92398 |           9055.71 |              11846.27 |              128209.19 |
-|      4 |         2024 | Hurricane Helene         |         57843 |           6027.67 |               6208.53 |              107334.11 |
-|      5 |         2022 | Hurricane Ian            |         48754 |           4838.68 |               5467.26 |              112139.68 |
-|      6 |         2008 | Hurricane Ike            |         58126 |           2702.51 |               4067.22 |               69972.54 |
-|      7 |         2016 | Mid-summer severe storms |         30018 |           2533.53 |               3397.11 |              113169.21 |
-|      8 |         2004 | Hurricane Ivan           |         20137 |           1325.42 |               2273.47 |              112900.30 |
-|      9 |         2001 | Tropical Storm Allison   |         35561 |           1104.98 |               2004.68 |               56373.08 |
-|     10 |         2011 | Hurricane Irene          |         52493 |           1347.40 |               1943.62 |               37026.28 |
+|      1 |         2005 | Hurricane Katrina        |        208348 |          16261.70 |              27088.99 |                 130017 |
+|      2 |         2012 | Hurricane Sandy          |        144848 |           8957.47 |              12553.89 |                  86669 |
+|      3 |         2017 | Hurricane Harvey         |         92398 |           9055.71 |              11846.27 |                 128209 |
+|      4 |         2024 | Hurricane Helene         |         57843 |           6027.67 |               6208.53 |                 107334 |
+|      5 |         2022 | Hurricane Ian            |         48754 |           4838.68 |               5467.26 |                 112139 |
+|      6 |         2008 | Hurricane Ike            |         58126 |           2702.51 |               4067.22 |                  69972 |
+|      7 |         2016 | Mid-summer severe storms |         30018 |           2533.53 |               3397.11 |                 113169 |
+|      8 |         2004 | Hurricane Ivan           |         20137 |           1325.42 |               2273.47 |                 112900 |
+|      9 |         2001 | Tropical Storm Allison   |         35561 |           1104.98 |               2004.68 |                  56373 |
+|     10 |         2011 | Hurricane Irene          |         52493 |           1347.40 |               1943.62 |                  37026 |
 
 <br />
 
 ![figures/count-claims-map](figures/count-claims-map.png)
-**Figure xx. Number of NFIP Claims by State from 1978 to 2024.**
+**Figure xx. Number of NFIP Claims by State from 1978 to 2025.**
 
 ![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
-**Figure xx. Number of NFIP Claims Normalized by State Area from 1978 to 2024.**
+**Figure xx. Number of NFIP Claims Normalized by State Area from 1978 to 2025.**
 
 # 1. Introduction
 The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by [FEMA](https://www.fema.gov/) and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, FEMA [released](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) two datasets on [OpenFEMA](https://www.fema.gov/about/reports-and-data/openfema) related to the NFIP to promote transparency, reduce complexity for public data requests, and to improve how the agency’s stakeholders interact with and understand the NFIP:
-1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2)
-2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2)
 
-With over 69 million policies and 2.7 million claims transactions as of May 04, 2025, this is one of the largest openly available insurance datasets in the United States and possibly the world. This project examines the NFIP Redacted Claims dataset, but more importantly, demonstrates how to query and manipulate the data with ease.
+1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2): This dataset provides details on NFIP policy transactions.
+2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2): This dataset represents more than 2,000,000 claims transactions.
 
-Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. To address this, I designed a tutorial demonstrating how to analyze the dataset with my local laptop. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
+With over 69 million policies and 2.7 million claims transactions as of May 14, 2025, this is one of the largest openly available insurance datasets in the United States and possibly the world. This project examines both the NFIP Redacted Claims and Policies datasets, but more importantly, demonstrates how to query and manipulate the data with ease.
+
+Due to its large file size, accessing the dataset can be a challenge, even for experienced analysts. Guidance from [OpenFEMA](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2):
+>In order to improve accessibility, we have one compressed file. Due to the file size we recommend using Access, SQL, or another programming/data management tool to visualize and manipulate the data, as Excel will not be able to process files this large without data loss.
+
+OpenFEMA also provides a lot of great recommendations with their guide [OpenFEMA Guide to Working with Large Data Sets](https://www.fema.gov/about/openfema/working-with-large-data-sets).
+
+To address this, I designed a tutorial demonstrating how to analyze the dataset with my local laptop. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
 
 The ultimate goal of this project is to promote the dataset for academic research and to assist communities in analyzing and downloading the data. This dataset is one of my favorites, and I hope you find these tutorials helpful in advancing the study and analysis of the NFIP.
 
