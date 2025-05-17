@@ -71,8 +71,8 @@ Last Data Refresh: 05-14-2025.
 # 1. Introduction
 The [National Flood Insurance Program](https://www.fema.gov/flood-insurance) (NFIP) is managed by [FEMA](https://www.fema.gov/) and provides flood insurance to mitigate the socio-economic impacts of floods. In 2019, FEMA [released](https://www.fema.gov/press-release/20230425/fema-publishes-nfip-claims-and-policy-data) two datasets on [OpenFEMA](https://www.fema.gov/about/reports-and-data/openfema) related to the NFIP to promote transparency, reduce complexity for public data requests, and to improve how the agency’s stakeholders interact with and understand the NFIP:
 
-1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2): This dataset provides details on NFIP policy transactions.
-2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2): This dataset represents more than 2,000,000 claims transactions.
+1) [NFIP Redacted Policies](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-policies-v2): Provides details on NFIP policy transactions.
+2) [NFIP Redacted Claims](https://www.fema.gov/openfema-data-page/fima-nfip-redacted-claims-v2): Represents more than 2,000,000 NFIP claims transactions.
 
 With over 69 million policies and 2.7 million claims transactions as of May 14, 2025, this is one of the largest openly available insurance datasets in the United States and possibly the world. This project examines both the NFIP Redacted Claims and Policies datasets, but more importantly, demonstrates how to query and manipulate the data with ease.
 
@@ -82,7 +82,7 @@ Due to its large file size, accessing the dataset can be a challenge, even for e
 OpenFEMA also provides a lot of great recommendations with their guide [OpenFEMA Guide to Working with Large Data Sets](https://www.fema.gov/about/openfema/working-with-large-data-sets):
 >Once data has been successfully downloaded, viewing, manipulating, and analyzing data can be a challenge. A spreadsheet program such as Microsoft Excel has a data size limit. Large data sets will exceed spreadsheet tool row limits and will not open without data loss. Common text editors such as Notepad++ or Sublime have 2 GB file limits, again preventing the opening, search, and editing capabilities from working. Using different tools, extracting subsets, and/or aggregating detailed data are good approaches for making analysis easier.
 
-To address this, I designed a tutorial demonstrating how to analyze the datasets with my laptop locally. To achieve this, I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
+To address this, I designed a tutorial demonstrating how to analyze the datasets with my laptop locally. I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
 
 The ultimate goal of this project is to promote the dataset for academic research and to assist communities in analyzing and downloading the data. This dataset is one of my favorites, and I hope you find these tutorials helpful in advancing the study and analysis of the NFIP.
 
@@ -93,10 +93,11 @@ To learn more about the NFIP:
 In the [Additional Resources](#4-Additional-Resources) section, you’ll find some of my favorite reports and analyses related to the NFIP, particularly from the early days of the datasets' release. I highly recommend checking them out.
 
 # 2. Notebooks
-- [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Claims dataset from OpenFEMA.
-- [Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explores NFIP Claims data with DuckDB with ease.
-- [Generate Figures](https://github.com/mebauer/duckdb-fema-nfip/blob/main/figures.ipynb): Dedicated to generating figures and tables displayed on this page. For a more detailed analysis of the NFIP data, refer to the [analysis.ipynb](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb) notebook.
-- [Metadata](https://github.com/mebauer/duckdb-fema-nfip/blob/main/metadata.ipynb): Examines the metadata for the NFIP Claims dataset. Here, we retrieve and save the [data dictionary](https://github.com/mebauer/duckdb-fema-nfip/blob/main/data-dictionary.csv).
+- [Metadata](https://github.com/mebauer/duckdb-fema-nfip/blob/main/metadata.ipynb): Examines the metadata for the NFIP Claims and Policies datasets. Here, we retrieve and save the [data dictionary](https://github.com/mebauer/duckdb-fema-nfip/blob/main/data-dictionary.csv).
+- [Download Data](https://github.com/mebauer/duckdb-fema-nfip/blob/main/download-data.ipynb): Demonstrates how to download the NFIP Claims and Policies datasets as Parquet files from OpenFEMA.
+- [Claims Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explores NFIP Claims data with DuckDB.
+- [Policies Analysis](https://github.com/mebauer/duckdb-fema-nfip/blob/main/analysis.ipynb): Explores NFIP Policies data with DuckDB.
+- [Generate Figures](https://github.com/mebauer/duckdb-fema-nfip/blob/main/figures.ipynb): Dedicated to generating figures and tables displayed on this page. For a more detailed analysis of the NFIP data, refer to the analysis notebooks.
 
 # 3. Data 
 OpenFEMA Datasets:
