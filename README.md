@@ -34,6 +34,21 @@ Last Data Refresh: 05-14-2025.
 |--------------:|------------------:|----------------:|----------------:|-----------:|
 |          2.71 |         88,145.83 |       71,665.54 |       15,528.23 |     952.06 |
 
+
+**Table xx. Number and NFIP Policies in Force.** Number of Policies in Force as of 05-14-2025. Total Insurance Coverage, Premiums, and Policy Costs are in millions.
+|   policiesInForce |   totalInsuranceCoverageM |   totalInsurancePremiumOfThePolicyM |   policyCostM |
+|------------------:|--------------------------:|------------------------------------:|--------------:|
+|      4,469,069.00 |              1,229,228.66 |                            3,874.69 |      5,047.91 |
+
+<br />
+
+![year-count](figures/claims-policies-year.png)
+**Figure xx. Number of NFIP Claims and Policies (2009-2024).**
+
+
+![year-count](figures/state-year.png)
+**Figure xx. Number of NFIP Claims and Policies by State (2009-2024).**
+
 <br />
 
 ![year-count](figures/year-count.png)
