@@ -41,7 +41,7 @@ Last Data Refresh: 05-14-2025.
 
 
 ![year-amount-paid](figures/year-amount-paid.png)
-**Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2024 Dollars).**
+**Figure xx. Total Amount Paid on NFIP Claims by Year from 1978 to 2024 (Adjusted in 2024 Dollars).** Total amount paid is defined as the total amount paid for all Building, Contents, and Increased Cost of Compliance (ICC) claims.
 
 <br />
 
@@ -85,7 +85,7 @@ OpenFEMA also provides a lot of great recommendations with their guide [OpenFEMA
 To address this, I designed a tutorial demonstrating how to analyze the datasets with my laptop locally. I utilized [DuckDB](https://duckdb.org/), a lightweight, high-performance SQL OLAP database management system. DuckDB offers a smooth experience, is blazing-fast, includes a robust Python API, and is open-source. I used SQL via the [Python Client API](https://duckdb.org/docs/api/python/overview.html) for data analysis and used [GeoPandas](https://geopandas.org/en/stable/) for mapping.
 
 ### Goals
-The ultimate goal of this project is to promote the dataset for academic research and to assist communities in analyzing and downloading the data. This dataset is one of my favorites, and I hope you find these tutorials helpful in advancing the study and analysis of the NFIP.
+The ultimate goal of this project is to promote these datasets for academic research and to assist communities in analyzing and downloading the data. This dataset is one of my favorites, and I hope you find these tutorials helpful in advancing the study and analysis of the NFIP.
 
 To learn more about the NFIP:
 - [NFIP Website](https://www.fema.gov/flood-insurance): NFIP information from FEMA.
