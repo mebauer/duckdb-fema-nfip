@@ -42,11 +42,11 @@ Last Data Refresh: 05-14-2025.
 
 <br />
 
-![year-count](figures/claims-policies-year.png)
+![claims-policies-year](figures/claims-policies-year.png)
 **Figure xx. Number of NFIP Claims and Policies (2009-2024).**
 
 
-![year-count](figures/state-year.png)
+![state-year](figures/state-year.png)
 **Figure xx. Number of NFIP Claims and Policies by State (2009-2024).**
 
 <br />
@@ -76,11 +76,11 @@ Last Data Refresh: 05-14-2025.
 
 <br />
 
-![figures/count-claims-map](figures/count-claims-map.png)
+![count-claims-map](figures/count-claims-map.png)
 **Figure xx. Number of NFIP Claims by State from 1978 to 2025.**
 
 
-![figures/count-claims-norm-map](figures/count-claims-norm-map.png)
+![count-claims-norm-map](figures/count-claims-norm-map.png)
 **Figure xx. Number of NFIP Claims Normalized by State Area from 1978 to 2025.**
 
 # 1. Introduction
